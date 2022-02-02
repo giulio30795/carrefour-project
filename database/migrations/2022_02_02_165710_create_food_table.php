@@ -28,6 +28,7 @@ class CreateFoodTable extends Migration
             $table->smallInteger('quantity');
             $table->tinyInteger('discount')->default(0);
             $table->date('discount_end_date');
+            $table->mediumText('description')->default('No Description');
             $table->timestamps();
         });
     }
