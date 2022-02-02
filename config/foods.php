@@ -18,7 +18,7 @@ return [
         "nutrictionals" => [],
         "conservation" => "Fresco",
         "stock" => 37,
-        "quatity" => 300,
+        "quantity" => 300,
         "discount" => 0,
         "discount_end_date" => "",
         "description" => "Filetto a trancio di Salmone senza pelle allevato Norvegia 300 g",
@@ -44,7 +44,7 @@ return [
 
         "conservation" => "Surgelato",
         "stock" => 48,
-        "quatity" => 220,
+        "quantity" => 220,
         "discount" => 0,
         "discount_end_date" => "",
 
@@ -71,7 +71,7 @@ return [
 
         "conservation" => "Fresco",
         "stock" => 12,
-        "quatity" => 250,
+        "quantity" => 250,
         "discount" => 20,
         "discount_end_date" => "16-02-2022",
 
@@ -98,7 +98,7 @@ return [
 
         "conservation" => "Fresco",
         "stock" => 72,
-        "quatity" => 250,
+        "quantity" => 250,
         "discount" => 0,
         "discount_end_date" => "",
 
@@ -142,7 +142,7 @@ return [
 
         "conservation" => "Fresco",
         "stock" => 54,
-        "quatity" => 250,
+        "quantity" => 250,
         "discount" => 0,
         "discount_end_date" => "",
 
@@ -193,7 +193,7 @@ return [
 
         "conservation" => "Fresco",
         "stock" => 42,
-        "quatity" => 300,
+        "quantity" => 300,
         "discount" => 20,
         "discount_end_date" => "16-02-2002",
 
@@ -238,7 +238,7 @@ return [
 
         "conservation" => "Fresco",
         "stock" => 72,
-        "quatity" => 375,
+        "quantity" => 375,
         "discount" => 0,
         "discount_end_date" => "",
 
@@ -286,7 +286,7 @@ return [
 
         "conservation" => "Fresco",
         "stock" => 0,
-        "quatity" => 165,
+        "quantity" => 165,
         "discount" => 0,
         "discount_end_date" => "",
 
@@ -328,7 +328,7 @@ return [
 
         "conservation" => "Fresco",
         "stock" => 84,
-        "quatity" => 70,
+        "quantity" => 70,
         "discount" => 10,
         "discount_end_date" => "19-02-2002",
 
