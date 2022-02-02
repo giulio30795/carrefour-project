@@ -24,7 +24,7 @@ class FoodController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
