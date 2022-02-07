@@ -4,6 +4,7 @@ namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Food;
 
 class FoodController extends Controller
 {
@@ -24,7 +25,7 @@ class FoodController extends Controller
      */
     public function create()
     {
-        
+        //
     }
 
     /**
@@ -44,9 +45,9 @@ class FoodController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Food $food)
     {
-        //
+        return view('admin.food.show', $food->id);
     }
 
     /**
