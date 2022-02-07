@@ -19,26 +19,30 @@ class FoodController extends Controller
 		return view('admin.food.index', compact('foods'));
 	}
 
-	/**
-	 * Show the form for creating a new resource.
-	 *
-	 * @return \Illuminate\Http\Response
-	 */
-	public function create()
-	{
-		//
-	}
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        return view('admin.food.create');
+    }
 
-	/**
-	 * Store a newly created resource in storage.
-	 *
-	 * @param  \Illuminate\Http\Request  $request
-	 * @return \Illuminate\Http\Response
-	 */
-	public function store(Request $request)
-	{
-		//
-	}
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        $data = $request->all();
+        $newFood = new Food();
+        // $newFood->title=$data['title'];
+        // $newFood->save();
+        return redirect()->route('admin.food.show', $newFood->id);
+    }
 
 	/**
 	 * Display the specified resource.
@@ -73,7 +77,7 @@ class FoodController extends Controller
 	{
 		//
 	}
-
+  
 	/**
 	 * Remove the specified resource from storage.
 	 *
