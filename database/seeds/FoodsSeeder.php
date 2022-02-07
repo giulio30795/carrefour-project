@@ -21,10 +21,6 @@ class FoodsSeeder extends Seeder
             $new_food->brand = $food['brand'];
             $new_food->price = $food['price'];
             $new_food->cover = $food['cover'];
-            $new_food->imgs = $food['imgs']; // array
-            $new_food->allergens = $food['allergens']; // array
-            $new_food->ingredients = $food['ingredients']; // array
-            $new_food->nutrictionals = $food['nutrictionals']; // array associativo
             $new_food->conservation = $food['conservation'];
             $new_food->stock = $food['stock'];
             $new_food->quantity = $food['quantity'];
