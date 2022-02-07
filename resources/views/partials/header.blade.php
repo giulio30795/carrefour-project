@@ -9,10 +9,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
            <ul class="navbar-nav">
              <li class="nav-item">
-               <a class="nav-link active" aria-current="page" href="{{ route('admin.food.home')}}">Home</a>
+               <a class="nav-link active" aria-current="page" href="{{ route('admin.food.index')}}">Home</a>
              </li>
              <li class="nav-item">
-               <a class="nav-link" href="#">Index</a>
+               <a class="nav-link" href="{{ route('admin.food.index')}}">Index</a>
              </li>
              <li class="nav-item">
                <a class="nav-link" href="{{ route('admin.food.create')}}">Crea</a>
