@@ -17,17 +17,8 @@
 						<img class="w-100" src="{{$food->cover}}" alt="img">
 					</div>
 
-					
-				</div>
-
-					{{-- <div class="thumbs
-						@if(!isEmpty($arrayImmagini)) show @endif"  --}}
-						{{-- TODO - convenzione nomi dati array --}}
-						{{-- > --}}
-							{{-- @foreach ($arrayImmagini as $img)
-								<img src="{{$img->url}}" alt="{{$img->title}}" class="product_thumbnail">
-							@endforeach --}}
-					{{-- </div> --}}
+	
+				</div>		
 				
 				<div class="col-6">
 					<h4 class="brand">{{$food->conservation}}</h4>

@@ -12,7 +12,7 @@ class AllergensSeeder extends Seeder
      */
     public function run()
     {
-        $allergens = config('foods');
+        $allergens = config('allergens');
         foreach ($allergens as $allergen) {
             $new_allergen = new Allergen();
             $new_allergen->name = $allergen;

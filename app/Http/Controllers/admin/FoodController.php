@@ -50,6 +50,7 @@ class FoodController extends Controller
 	 * @param  int  $id
 	 * @return \Illuminate\Http\Response
 	 */
+
 	public function show($id)
 	{   
         $food = Food::find($id);
@@ -83,9 +84,9 @@ class FoodController extends Controller
      */
     public function update(Request $request, $id)
     {
-                // TODO
+
                 // VALIDAZIONE
-                // $request ->validate($this->validation_rules(), $this->validation_message());
+                $request ->validate($this->validation_rules(), $this->validation_message());
 
                 $data = $request->all();
 
@@ -105,4 +106,31 @@ class FoodController extends Controller
         return redirect()->route('admin.food.index')->with('deleted' , $food->product_name);
     }
 
+
+        /**
+     * Validation rules
+    */ 
+    private function validation_rules() {
+        return [
+            'product_name' => 'required|max:150',
+            'brand' => 'required|max:100',
+            'price' => 'required',
+            'cover' => 'required|max:255',
+            'conservation' => 'required|max:20',
+            'stock' => 'required',
+            'quantity' => 'required',
+            'discount' => 'required',
+            'description' => 'required',
+        ];
+    }
+
+    /**
+     * Validation message
+    */ 
+    private function validation_message() {
+        return [
+            'required' => 'The :attribute is a required field!',
+            'max' => 'Max :max characters allowed for the :attribute.',
+        ];
+    }
 }
