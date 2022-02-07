@@ -28,24 +28,26 @@
 			</thead>
 			<tbody>
 				@forelse ($foods as $food)
-					<td>{{$food->id}}</td>
-					<td>{{$food->product_name}}</td>
-					<td>{{$food->price}}€</td>
-					<td>
-						@if ($food->stock >= 1)
-							Yes
-						@else
-							No
-						@endif
-					</td>
-					<td>SHOW</td>
-					<td>EDIT</td>
-					<td>
-						<form action="{{ route('admin.food.destroy', $food->id )}}" method="POST">
-							@csrf @method('DELETE')
-							<button type="submit" class="btn btn-danger">Delete</button>
-						</form>
-					</td>
+					<tr>
+						<td>{{$food->id}}</td>
+						<td>{{$food->product_name}}</td>
+						<td>{{$food->price}}€</td>
+						<td>
+							@if ($food->stock >= 1)
+								Yes
+							@else
+								No
+							@endif
+						</td>
+						<td>{{route('admin.food.show', $food->id)}}</td>
+						<td>{{route('admin.food.edit'), $food->id}}</td>
+						<td>
+							<form action="{{ route('admin.food.destroy', $food->id )}}" method="POST">
+								@csrf @method('DELETE')
+								<button type="submit" class="btn btn-danger">Delete</button>
+							</form>
+						</td>
+					</tr>
 				@empty
 				<h3>No Food Products Found</h3>
 				@endforelse

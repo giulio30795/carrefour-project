@@ -86,19 +86,18 @@ class FoodController extends Controller
                 // $request ->validate($this->validation_rules(), $this->validation_message());
 
                 $data = $request->all();
-        
+
                 // UPDATE RECORD
                 $food = Food::find($id);
-        
+
                 $food->update($data);
-        
+
                 return redirect()->route('admin.food.show', $food->id);
     }
 
     public function destroy($id)
     {
         $food = Food::find($id);
-        
         $food->delete();
 
         return redirect()->route('admin.food.index')->with('deleted' , $food->product_name);
