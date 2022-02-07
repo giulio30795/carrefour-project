@@ -43,7 +43,8 @@
 						<td><a href="{{route('admin.food.edit', $food->id)}}">EDIT</a></td>
 						<td>
 							<form action="{{ route('admin.food.destroy', $food->id )}}" method="POST">
-								@csrf @method('DELETE')
+								@csrf 
+								@method('DELETE')
 								<button type="submit" class="btn btn-danger">Delete</button>
 							</form>
 						</td>
