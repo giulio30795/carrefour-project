@@ -58,7 +58,13 @@ class FoodController extends Controller
      */
     public function edit($id)
     {
-        //
+        $food = Food::find($id);
+
+        if (! $food) {
+            abort(404);
+        }
+
+        return view('admin.food.edit', compact('food'));
     }
 
     /**
@@ -70,7 +76,18 @@ class FoodController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+                // TODO
+                // VALIDAZIONE
+                // $request ->validate($this->validation_rules(), $this->validation_message());
+
+                $data = $request->all();
+        
+                // UPDATE RECORD
+                $food = Food::find($id);
+        
+                $food->update($data);
+        
+                return redirect()->route('admin.food.show', $food->id);
     }
 
     /**
