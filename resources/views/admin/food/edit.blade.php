@@ -50,7 +50,7 @@
 
             <div class="mb-3">
                 <label for="description" class="form-label">Description*</label>
-                <textarea class="form-control" type="text" id="description" name="description" rows="6">{{ old('description', $post->description) }}</textarea>
+                <textarea class="form-control" type="text" id="description" name="description" rows="6">{{ old('description', $food->description) }}</textarea>
             </div>
 
             <button class="btn btn-primary" type="submit">Update Post</button>

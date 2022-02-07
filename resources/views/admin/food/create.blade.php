@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layouts.app')
 @section('content')
     <div class="w-75 create_crud">
         <form action="{{ route('admin.food.store') }}" method="POST">
