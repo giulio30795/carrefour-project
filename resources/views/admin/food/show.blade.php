@@ -10,12 +10,12 @@
 
 			<div class="left">
 				<div class="cover"></div>
-				<div class="thumbs
-				@if(!isEmpty($arrayImmagini)) show @endif" {{-- TODO - convenzione nomi dati array --}}
+				<div class="thumbs"
+				{{-- @if(!isEmpty($arrayImmagini)) show @endif" TODO - convenzione nomi dati array --}}
 				>
-					@foreach ($arrayImmagini as $img)
+					{{-- @foreach ($arrayImmagini as $img)
 						<img src="{{$img->url}}" alt="{{$img->title}}" class="product_thumbnail">
-					@endforeach
+					@endforeach --}}
 				</div>
 			</div>
 			<div class="right">
