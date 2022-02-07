@@ -40,7 +40,7 @@
 							@endif
 						</td>
 						<td>{{route('admin.food.show', $food->id)}}</td>
-						<td>{{route('admin.food.edit'), $food->id}}</td>
+						<td>{{route('admin.food.edit', $food->id)}}</td>
 						<td>
 							<form action="{{ route('admin.food.destroy', $food->id )}}" method="POST">
 								@csrf @method('DELETE')
