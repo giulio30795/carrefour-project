@@ -25,7 +25,7 @@ class FoodController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.food.create');
     }
 
     /**
@@ -36,7 +36,11 @@ class FoodController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        $newFood = new Food();
+        // $newFood->title=$data['title'];
+        // $newFood->save();
+        return redirect()->route('admin.food.show', $newFood->id);
     }
 
     /**
@@ -82,9 +86,9 @@ class FoodController extends Controller
     public function destroy($id)
     {
         $food = Food::find($id);
-        
+
         $food->delete();
 
-        return redirect()->route('admin.food.index')->with('deleted' , $food->product_name);
+        return redirect()->route('admin.food.index')->with('deleted', $food->product_name);
     }
 }
