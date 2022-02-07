@@ -55,40 +55,45 @@ class FoodController extends Controller
 		return view('admin.food.show', $food->id);
 	}
 
-	/**
-	 * Show the form for editing the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return \Illuminate\Http\Response
-	 */
-	public function edit($id)
-	{
-		//
-	}
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        $food = Food::find($id);
 
-	/**
-	 * Update the specified resource in storage.
-	 *
-	 * @param  \Illuminate\Http\Request  $request
-	 * @param  int  $id
-	 * @return \Illuminate\Http\Response
-	 */
-	public function update(Request $request, $id)
-	{
-		//
-	}
-  
-	/**
-	 * Remove the specified resource from storage.
-	 *
-	 * @param  int  $id
-	 * @return \Illuminate\Http\Response
-	 */
-	public function destroy($id)
-	{
-		$food = Food::find($id);
-		
-		$food->delete();
+        if (! $food) {
+            abort(404);
+        }
+
+        return view('admin.food.edit', compact('food'));
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+                // TODO
+                // VALIDAZIONE
+                // $request ->validate($this->validation_rules(), $this->validation_message());
+
+                $data = $request->all();
+        
+                // UPDATE RECORD
+                $food = Food::find($id);
+        
+                $food->update($data);
+        
+                return redirect()->route('admin.food.show', $food->id);
+    }
 
 		return redirect()->route('admin.food.index')->with('deleted' , $food->product_name);
 	}
