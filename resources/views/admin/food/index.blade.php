@@ -39,8 +39,8 @@
 								No
 							@endif
 						</td>
-						<td>{{route('admin.food.show', $food->id)}}</td>
-						<td>{{route('admin.food.edit'), $food->id}}</td>
+						<td><a href="{{route('admin.food.show', $food->id)}}">SHOW</a></td>
+						<td><a href="{{route('admin.food.edit', $food->id)}}">EDIT</a></td>
 						<td>
 							<form action="{{ route('admin.food.destroy', $food->id )}}" method="POST">
 								@csrf @method('DELETE')
