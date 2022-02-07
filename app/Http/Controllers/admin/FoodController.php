@@ -50,8 +50,11 @@ class FoodController extends Controller
 	 * @param  int  $id
 	 * @return \Illuminate\Http\Response
 	 */
-	public function show(Food $food)
-	{
+
+	public function show($id)
+	{   
+        $food = Food::find($id);
+
 		return view('admin.food.show', compact('food'));
 	}
 
