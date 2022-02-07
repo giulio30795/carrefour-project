@@ -19,10 +19,6 @@ class CreateFoodTable extends Migration
             $table->string('brand', 100);
             $table->double('price', 7, 2);
             $table->string('cover', 255)->default('https://i1.wp.com/potafiori.com/wp-content/uploads/2020/04/placeholder.png?ssl=1');
-            $table->text('imgs')->nullable(true);
-            $table->text('allergens');
-            $table->text('ingredients');
-            $table->text('nutrictionals');
             $table->string('conservation', 20);
             $table->smallInteger('stock');
             $table->smallInteger('quantity');
