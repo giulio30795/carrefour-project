@@ -8,15 +8,16 @@ use App\Food;
 
 class FoodController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
-    }
+	/**
+	 * Display a listing of the resource.
+	 *
+	 * @return \Illuminate\Http\Response
+	 */
+	public function index()
+	{
+		$foods = Food::all();
+		return view('admin.food.index', compact('foods'));
+	}
 
     /**
      * Show the form for creating a new resource.
@@ -25,7 +26,7 @@ class FoodController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.food.create');
     }
 
     /**
@@ -36,19 +37,23 @@ class FoodController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        $newFood = new Food();
+        // $newFood->title=$data['title'];
+        // $newFood->save();
+        return redirect()->route('admin.food.show', $newFood->id);
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Food $food)
-    {
-        return view('admin.food.show', $food->id);
-    }
+	/**
+	 * Display the specified resource.
+	 *
+	 * @param  int  $id
+	 * @return \Illuminate\Http\Response
+	 */
+	public function show(Food $food)
+	{
+		return view('admin.food.show', $food->id);
+	}
 
     /**
      * Show the form for editing the specified resource.
@@ -90,14 +95,6 @@ class FoodController extends Controller
                 return redirect()->route('admin.food.show', $food->id);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
+		return redirect()->route('admin.food.index')->with('deleted' , $food->product_name);
+	}
 }
