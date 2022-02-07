@@ -25,7 +25,6 @@ class FoodsSeeder extends Seeder
             $new_food->stock = $food['stock'];
             $new_food->quantity = $food['quantity'];
             $new_food->discount = $food['discount'];
-            $new_food->discount_end_date = $food['discount_end_date'];
             $new_food->description = $food['description'];
             $new_food->save();
         }

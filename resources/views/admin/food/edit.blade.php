@@ -49,11 +49,6 @@
             </div>
 
             <div class="mb-3">
-                <label for="discount_end_date" class="form-label">Discount End Date*</label>
-                <input class="form-control" type="date" step="0.01" id="discount_end_date" name="discount_end_date" value="{{ old('discount_end_date', $food->discount_end_date) }}">
-            </div>
-
-            <div class="mb-3">
                 <label for="description" class="form-label">Description*</label>
                 <textarea class="form-control" type="text" id="description" name="description" rows="6">{{ old('description', $post->description) }}</textarea>
             </div>

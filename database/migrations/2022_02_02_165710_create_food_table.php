@@ -23,7 +23,6 @@ class CreateFoodTable extends Migration
             $table->smallInteger('stock');
             $table->smallInteger('quantity');
             $table->tinyInteger('discount')->default(0);
-            $table->date('discount_end_date');
             $table->mediumText('description');
             $table->timestamps();
         });

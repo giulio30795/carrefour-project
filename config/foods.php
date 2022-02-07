@@ -11,7 +11,6 @@ return [
         "stock" => 37,
         "quantity" => 300,
         "discount" => 0,
-        "discount_end_date" => "",
         "description" => "Filetto a trancio di Salmone senza pelle allevato Norvegia 300 g",
     ],
     [
@@ -23,7 +22,6 @@ return [
         "stock" => 48,
         "quantity" => 220,
         "discount" => 0,
-        "discount_end_date" => "",
         "description" => "2x Filetti di branzino allevato con pelle 220 g",
     ],
     [
@@ -35,7 +33,6 @@ return [
         "stock" => 12,
         "quantity" => 250,
         "discount" => 20,
-        "discount_end_date" => "16-02-2022",
         "description" => "Cuore di merluzzo 250 g",
     ],
     [
@@ -47,7 +44,6 @@ return [
         "stock" => 72,
         "quantity" => 250,
         "discount" => 0,
-        "discount_end_date" => "",
         "description" => "I plus di Filiera Qualità Carrefour
 
         - Carne tenera e gustosa
@@ -67,7 +63,6 @@ return [
         "stock" => 54,
         "quantity" => 250,
         "discount" => 0,
-        "discount_end_date" => "",
         "description" => "Petto di pollo a fette Prodotto fresco classe A",
     ],
     [
@@ -79,7 +74,6 @@ return [
         "stock" => 42,
         "quantity" => 300,
         "discount" => 20,
-        "discount_end_date" => "16-02-2002",
         "description" => "Preparazione di carne di bovino adulto",
     ],
     [
@@ -91,7 +85,6 @@ return [
         "stock" => 72,
         "quantity" => 375,
         "discount" => 0,
-        "discount_end_date" => "",
         "description" => "Mozzarella",
     ],
     [
@@ -103,7 +96,6 @@ return [
         "stock" => 0,
         "quantity" => 165,
         "discount" => 0,
-        "discount_end_date" => "",
         "description" => "Crescenza",
     ],
     [
@@ -115,7 +107,6 @@ return [
         "stock" => 84,
         "quantity" => 70,
         "discount" => 10,
-        "discount_end_date" => "19-02-2002",
         "description" => "Il prosciutto di Parma é senza conservanti e senza glutine ",
     ],
     /* [
