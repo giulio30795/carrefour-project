@@ -8,16 +8,16 @@ use App\Food;
 
 class FoodController extends Controller
 {
-	/**
-	 * Display a listing of the resource.
-	 *
-	 * @return \Illuminate\Http\Response
-	 */
-	public function index()
-	{
-		$foods = Food::all();
-		return view('admin.food.index', compact('foods'));
-	}
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        $foods = Food::all();
+        return view('admin.food.index', compact('foods'));
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -39,21 +39,21 @@ class FoodController extends Controller
     {
         $data = $request->all();
         $newFood = new Food();
-        // $newFood->title=$data['title'];
-        // $newFood->save();
+        $newFood->fill($data);
+        $newFood->save();
         return redirect()->route('admin.food.show', $newFood->id);
     }
 
-	/**
-	 * Display the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return \Illuminate\Http\Response
-	 */
-	public function show(Food $food)
-	{
-		return view('admin.food.show', $food->id);
-	}
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show(Food $food)
+    {
+        return view('admin.food.show', $food->id);
+    }
 
     /**
      * Show the form for editing the specified resource.
@@ -65,7 +65,7 @@ class FoodController extends Controller
     {
         $food = Food::find($id);
 
-        if (! $food) {
+        if (!$food) {
             abort(404);
         }
 
@@ -81,18 +81,18 @@ class FoodController extends Controller
      */
     public function update(Request $request, $id)
     {
-                // TODO
-                // VALIDAZIONE
-                // $request ->validate($this->validation_rules(), $this->validation_message());
+        // TODO
+        // VALIDAZIONE
+        // $request ->validate($this->validation_rules(), $this->validation_message());
 
-                $data = $request->all();
+        $data = $request->all();
 
-                // UPDATE RECORD
-                $food = Food::find($id);
+        // UPDATE RECORD
+        $food = Food::find($id);
 
-                $food->update($data);
+        $food->update($data);
 
-                return redirect()->route('admin.food.show', $food->id);
+        return redirect()->route('admin.food.show', $food->id);
     }
 
     public function destroy($id)
@@ -100,7 +100,6 @@ class FoodController extends Controller
         $food = Food::find($id);
         $food->delete();
 
-        return redirect()->route('admin.food.index')->with('deleted' , $food->product_name);
+        return redirect()->route('admin.food.index')->with('deleted', $food->product_name);
     }
-
 }
