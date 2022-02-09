@@ -2,10 +2,10 @@
 <div>
 
 
-      <Header />
-      <Categories />
-      <Main />
-      <Footer />
+	  <Header />
+	  <Categories />
+	  <Main />
+	  <Footer />
  
 </div>
 
@@ -21,24 +21,24 @@ import Footer from '../components/Footer';
 
 export default {
 
-    name: 'App',
-    components: {
-        Header,
-        Main,
-        Categories,
-        Footer,
-    },
-    data() {
-        return {
+	name: 'App',
+	components: {
+		Header,
+		Main,
+		Categories,
+		Footer,
+	},
+	data() {
+		return {
 
-        }
-    },
-    created() {
+		}
+	},
+	created() {
 
-    },
-    methods: {
+	},
+	methods: {
 
-    },
+	},
 }
 </script>
 
