@@ -7,8 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Work in progress</h1>
+    <div id="root">
+
     </div>
+
+    <script src="{{asset('js/front.js')}}"></script>
+
 </body>
 </html>
