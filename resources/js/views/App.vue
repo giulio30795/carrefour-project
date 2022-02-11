@@ -18,16 +18,17 @@
 <script>
 import axios from 'axios';
 import Header from '../components/Header';
-import Main from '../components/Main';
+// import Main from '../components/Main';
 import Categories from '../components/Categories';
 import Footer from '../components/Footer';
+import ProductsCarousel from '../components/ProductsCarousel';
 
 export default {
 
 	name: 'App',
 	components: {
 		Header,
-		Main,
+		ProductsCarousel,
 		Categories,
 		Footer,
 	},
@@ -37,12 +38,13 @@ export default {
 		}
 	},
 	created() {
-		
+		this.fetchProducts();
 	},
 	methods: {
 		fetchProducts() {
 			axios.get('http://127.0.0.1:8000/api/foods')
 			.then(response => {
+				console.log(response);
 				this.products = response.data;
 			})
 			.catch(err => {
@@ -55,6 +57,8 @@ export default {
 
 <style>
 * {
-	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 </style>

@@ -1,18 +1,19 @@
 <template>
 	<article class="product_card">
+		<h1>prodotto</h1>
 		<div class="top_info">
-			<div class="text-danger" v-if="product.discount > 0">IN OFFERTA</div>
-			<div class="fav">
-				<i @click="this.$emit('revertFavorite')" v-if="product.favorite === true" class="fa-solid fa-heart"></i>
-				<i @click="this.$emit('revertFavorite')" v-if="product.favorite === false || product.favorite == null" class="fa-solid fa-heart-crack"></i>
-			</div>
+			<div class="text-danger" v-if="discount > 0">IN OFFERTA</div>
+			<!-- <div class="fav">
+				<i @click="this.$emit('revertFavorite')" v-if="favorite === true" class="fa-solid fa-heart"></i>
+				<i @click="this.$emit('revertFavorite')" v-if="favorite === false || product.favorite == null" class="fa-solid fa-heart-crack"></i>
+			</div> -->
 		</div>
 		<div class="top_details">
-			<div class="brand">{{product.brand}}</div>
-			<div class="product_name">{{product.name}}</div>
+			<div class="brand">{{brand}}</div>
+			<div class="product_name">{{name}}</div>
 		</div>
 		<figure class="cover">
-			<img class="cover_image" src="{{product.cover}}" alt="">
+			<!-- <img class="cover_image" src="{{cover}}" alt=""> -->
 			<!-- TODO vogliamo mettere le iconcine di categoria/altro o lasciamo vuoto? -->
 			<!-- <img src="" alt=""> -->
 		</figure>
@@ -35,7 +36,10 @@
 	export default {
 		name: 'ProductCard',
 		props: {
-			product: Object,
+			discount: Number,
+			name: String,
+			brand: String,
+			// cover: String,
 		},
 		data() {
 			return {

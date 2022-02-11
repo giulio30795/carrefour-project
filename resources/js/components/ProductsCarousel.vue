@@ -1,6 +1,11 @@
 <template>
-	<div class="container">
-		<ProductCard class="product_carousel" v-for="(products, i) in products" :key="`product_${i}`" :product="products[i]"/>
+	<div class="container product_carousel">
+		<ProductCard v-for="(product, i) in products" :key="`product_${i}`"
+		:discount="product.discount"
+		:name="product.name"
+		:brand="product.brand"
+		
+		/>
 	</div>
 </template>
 
@@ -26,5 +31,7 @@ export default {
 	height: 130px;
 	width: 100%;
 	padding-inline: 5%;
+	display: flex;
+	align-items: center;
 }
 </style>
