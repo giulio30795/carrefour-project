@@ -1,13 +1,27 @@
 <template>
-  
+    <div class="container">
+
+        <BannerBlu />
+
+        <Navbar />
+        
+    </div> 
 </template>
 
 <script>
-export default {
+import BannerBlu from '../section/BannerBlu';
+import Navbar from '../section/Navbar';
 
+export default {
+    name: Header,
+    components: {
+        BannerBlu,
+        Navbar,
+    }
 }
+
 </script>
 
-<style>
+<style lang="scss" scoped>
 
 </style>

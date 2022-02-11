@@ -49931,13 +49931,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
 __webpack_require__(/*! C:\Users\misia\OneDrive\Desktop\carrefour-project\resources\js\app.js */"./resources/js/app.js");
 module.exports = __webpack_require__(/*! C:\Users\misia\OneDrive\Desktop\carrefour-project\resources\sass\app.scss */"./resources/sass/app.scss");
-=======
-__webpack_require__(/*! /Users/giulioincarbone/Desktop/Boolean/carrefour-project/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/giulioincarbone/Desktop/Boolean/carrefour-project/resources/sass/app.scss */"./resources/sass/app.scss");
->>>>>>> 3cba6f7d8185cfab0ba3118aba2e74909b6ee597
 
 
 /***/ })
