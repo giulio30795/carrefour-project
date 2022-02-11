@@ -41,7 +41,7 @@ export default {
 	},
 	methods: {
 		fetchProducts() {
-			axios.get('http://127.0.0.1:8000/api/')
+			axios.get('http://127.0.0.1:8000/api/foods')
 			.then()
 			.catch();
 		},
