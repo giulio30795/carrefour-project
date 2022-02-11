@@ -1991,15 +1991,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'ProductCard',
   props: {
     discount: Number,
     name: String,
-    brand: String // cover: String,
-
+    brand: String,
+    cover: String,
+    price: Number
   },
   data: function data() {
     return {
@@ -2021,6 +2020,22 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ProductCard_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ProductCard.vue */ "./resources/js/components/ProductCard.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2130,7 +2145,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".product_card[data-v-1a457ff8] {\n  height: 100%;\n  width: 16.6666666667%;\n}\n.product_card .top_info[data-v-1a457ff8] {\n  display: flex;\n  justify-content: space-between;\n}\n.product_card .bottom_details .offer_details[data-v-1a457ff8] {\n  display: flex;\n}", ""]);
+exports.push([module.i, ".product_card[data-v-1a457ff8] {\n  height: 100%;\n  width: calc((100% - 60px) / 6);\n  margin-inline: 5px;\n  margin-bottom: 10px;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  padding: 10px;\n  background-color: white;\n  list-style-type: none;\n  flex-shrink: 0;\n}\n.product_card .top_info[data-v-1a457ff8] {\n  display: flex;\n  justify-content: space-between;\n}\n.product_card .top_info .fav[data-v-1a457ff8] {\n  margin-left: auto;\n}\n.product_card .cover .cover_image[data-v-1a457ff8] {\n  height: 100%;\n  width: 100%;\n  -o-object-fit: contain;\n     object-fit: contain;\n  -o-object-position: position;\n     object-position: position;\n}\n.product_card .bottom_details .offer_details[data-v-1a457ff8] {\n  display: flex;\n}\n.product_card .add_to_cart[data-v-1a457ff8] {\n  align-self: end;\n}", ""]);
 
 // exports
 
@@ -2149,7 +2164,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".product_carousel[data-v-9ee51962] {\n  height: 130px;\n  width: 100%;\n  padding-inline: 5%;\n  display: flex;\n  align-items: center;\n}", ""]);
+exports.push([module.i, ".product_carousel[data-v-9ee51962] {\n  width: 100%;\n  padding: 2rem 5%;\n}\n.product_carousel .heading[data-v-9ee51962] {\n  display: flex;\n  align-items: center;\n  margin-bottom: 2rem;\n}\n.product_carousel .heading .section_title[data-v-9ee51962] {\n  width: 80%;\n}\n.product_carousel .heading .nav_btns[data-v-9ee51962] {\n  width: 20%;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n.product_carousel .slides[data-v-9ee51962] {\n  display: flex;\n  flex-wrap: nowrap;\n  align-items: stretch;\n  overflow-x: auto;\n}", ""]);
 
 // exports
 
@@ -2168,7 +2183,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n* {\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\tbox-sizing: border-box;\n}\r\n", ""]);
+exports.push([module.i, "\n* {\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\tbox-sizing: border-box;\n}\nbody {\r\nbackground-color: #f7f7f7;\r\nfont-family: sans-serif;\n}\r\n", ""]);
 
 // exports
 
@@ -3416,13 +3431,17 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("article", { staticClass: "product_card" }, [
-    _c("h1", [_vm._v("prodotto")]),
-    _vm._v(" "),
+  return _c("li", { staticClass: "product_card" }, [
     _c("div", { staticClass: "top_info" }, [
       _vm.discount > 0
         ? _c("div", { staticClass: "text-danger" }, [_vm._v("IN OFFERTA")])
         : _vm._e(),
+      _vm._v(" "),
+      _c("div", { staticClass: "fav" }, [
+        _vm.favorite === false || _vm.product.favorite == null
+          ? _c("i", { staticClass: "fa-solid fa-heart-crack" })
+          : _vm._e(),
+      ]),
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "top_details" }, [
@@ -3431,9 +3450,22 @@ var render = function () {
       _c("div", { staticClass: "product_name" }, [_vm._v(_vm._s(_vm.name))]),
     ]),
     _vm._v(" "),
-    _c("figure", { staticClass: "cover" }),
+    _c("figure", { staticClass: "cover" }, [
+      _c("img", {
+        staticClass: "cover_image",
+        attrs: { src: _vm.cover, alt: "" },
+      }),
+    ]),
     _vm._v(" "),
-    _vm._m(0),
+    _c("div", { staticClass: "bottom_details" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "stock_price" }),
+      _vm._v(" "),
+      _c("div", { staticClass: "detail_price text-danger fs-4" }, [
+        _vm._v(_vm._s(parseFloat(_vm.price).toFixed(2)) + "€"),
+      ]),
+    ]),
     _vm._v(" "),
     _vm._m(1),
   ])
@@ -3443,14 +3475,8 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "bottom_details" }, [
-      _c("div", { staticClass: "offer_details" }, [
-        _c("div", { staticClass: "discount_badge badge badge-danger" }),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "stock_price" }),
-      _vm._v(" "),
-      _c("div", { staticClass: "detail_price text-danger fs-4" }),
+    return _c("div", { staticClass: "offer_details" }, [
+      _c("div", { staticClass: "discount_badge badge badge-danger" }),
     ])
   },
   function () {
@@ -3483,23 +3509,48 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "container product_carousel" },
-    _vm._l(_vm.products, function (product, i) {
-      return _c("ProductCard", {
-        key: "product_" + i,
-        attrs: {
-          discount: product.discount,
-          name: product.name,
-          brand: product.brand,
-        },
-      })
-    }),
-    1
-  )
+  return _c("div", { staticClass: "product_carousel" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "ul",
+      { staticClass: "slides" },
+      _vm._l(_vm.products, function (product, i) {
+        return _c("ProductCard", {
+          key: "product_" + i,
+          attrs: {
+            discount: product.discount,
+            name: product.product_name,
+            brand: product.brand,
+            cover: product.cover,
+            price: product.price,
+          },
+        })
+      }),
+      1
+    ),
+  ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "heading" }, [
+      _c("h2", { staticClass: "section_title" }, [_vm._v("I Nostri Prodotti")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "nav_btns" }, [
+        _c("div", { staticClass: "prev" }, [
+          _c("i", { staticClass: "fa-solid fa-chevron-left" }),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "next" }, [
+          _c("i", { staticClass: "fa-solid fa-chevron-right" }),
+        ]),
+      ]),
+    ])
+  },
+]
 render._withStripped = true
 
 
