@@ -8,16 +8,16 @@ use App\Food;
 
 class FoodController extends Controller
 {
-	/**
-	 * Display a listing of the resource.
-	 *
-	 * @return \Illuminate\Http\Response
-	 */
-	public function index()
-	{
-		$foods = Food::all();
-		return view('admin.food.index', compact('foods'));
-	}
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        $foods = Food::all();
+        return view('admin.food.index', compact('foods'));
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -39,24 +39,24 @@ class FoodController extends Controller
     {
         $data = $request->all();
         $newFood = new Food();
-        // $newFood->title=$data['title'];
-        // $newFood->save();
+        $newFood->fill($data);
+        $newFood->save();
         return redirect()->route('admin.food.show', $newFood->id);
     }
 
-	/**
-	 * Display the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return \Illuminate\Http\Response
-	 */
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
 
-	public function show($id)
-	{   
+    public function show($id)
+    {
         $food = Food::find($id);
 
-		return view('admin.food.show', compact('food'));
-	}
+        return view('admin.food.show', compact('food'));
+    }
 
     /**
      * Show the form for editing the specified resource.
@@ -68,7 +68,7 @@ class FoodController extends Controller
     {
         $food = Food::find($id);
 
-        if (! $food) {
+        if (!$food) {
             abort(404);
         }
 
@@ -85,17 +85,17 @@ class FoodController extends Controller
     public function update(Request $request, $id)
     {
 
-                // VALIDAZIONE
-                $request ->validate($this->validation_rules(), $this->validation_message());
+        // VALIDAZIONE
+        $request->validate($this->validation_rules(), $this->validation_message());
 
-                $data = $request->all();
+        $data = $request->all();
 
-                // UPDATE RECORD
-                $food = Food::find($id);
+        // UPDATE RECORD
+        $food = Food::find($id);
 
-                $food->update($data);
+        $food->update($data);
 
-                return redirect()->route('admin.food.show', $food->id);
+        return redirect()->route('admin.food.show', $food->id);
     }
 
     public function destroy($id)
@@ -103,14 +103,15 @@ class FoodController extends Controller
         $food = Food::find($id);
         $food->delete();
 
-        return redirect()->route('admin.food.index')->with('deleted' , $food->product_name);
+        return redirect()->route('admin.food.index')->with('deleted', $food->product_name);
     }
 
 
-        /**
+    /**
      * Validation rules
-    */ 
-    private function validation_rules() {
+     */
+    private function validation_rules()
+    {
         return [
             'product_name' => 'required|max:150',
             'brand' => 'required|max:100',
@@ -126,8 +127,9 @@ class FoodController extends Controller
 
     /**
      * Validation message
-    */ 
-    private function validation_message() {
+     */
+    private function validation_message()
+    {
         return [
             'required' => 'The :attribute is a required field!',
             'max' => 'Max :max characters allowed for the :attribute.',
