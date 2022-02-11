@@ -6,7 +6,7 @@
 	<Categories />
 	<!-- <Main /> -->
 	<main>
-		<ProductsCarousel />
+		<ProductsCarousel :products="products"/>
 	</main>
 	<Footer />
 
@@ -42,13 +42,19 @@ export default {
 	methods: {
 		fetchProducts() {
 			axios.get('http://127.0.0.1:8000/api/foods')
-			.then()
-			.catch();
+			.then(response => {
+				this.products = response.data;
+			})
+			.catch(err => {
+				console.log(err);
+			});
 		},
 	},
 }
 </script>
 
 <style>
-
+* {
+	
+}
 </style>

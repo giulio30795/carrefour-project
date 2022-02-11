@@ -48,8 +48,10 @@
 	}
 </script>
 
-<style lang="sass" scoped>
+<style lang="scss" scoped>
 	.product_card {
+		height: 100%;
+		width: calc(100% / 6);
 		.top_info {
 			display: flex;
 			justify-content: space-between;
@@ -70,7 +72,6 @@
 		.bottom_details {
 			.offer_details {
 				display: flex;
-				
 			}
 			.stock_price {
 

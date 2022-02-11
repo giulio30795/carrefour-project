@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Auth;
 
 
 Route::get('/', function () {
-    return view('welcome');
+	return view('welcome');
 });
 
 Auth::routes();
@@ -27,13 +27,13 @@ Route::middleware('auth')
 ->name('admin.')
 ->prefix('admin')
 ->group(function() {
-    Route::get('/', 'HomeController@index')->name('home');
-    Route::resource('/food', 'FoodController');
+	Route::get('/', 'HomeController@index')->name('home');
+	Route::resource('/food', 'FoodController');
 });
 
 
 Route::get('{any?}', function(){
-    return view('guest.home');
+	return view('guest.home');
 })->where('any', '.*');
 
 Auth::routes();

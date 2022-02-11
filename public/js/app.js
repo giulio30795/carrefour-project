@@ -49931,8 +49931,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/giulioincarbone/Desktop/Boolean/carrefour-project/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/giulioincarbone/Desktop/Boolean/carrefour-project/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\jesus\Desktop\BOOLEAN\progetto_parallelo_pomeriggio\carrefour-project\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\jesus\Desktop\BOOLEAN\progetto_parallelo_pomeriggio\carrefour-project\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
