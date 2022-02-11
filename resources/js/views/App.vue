@@ -2,11 +2,14 @@
 <div>
 
 
-      <Header />
-      <Categories />
-      <Main />
-      <Footer />
- 
+	<Header />
+	<Categories />
+	<!-- <Main /> -->
+	<main>
+		<ProductsCarousel />
+	</main>
+	<Footer />
+
 </div>
 
 
@@ -21,24 +24,28 @@ import Footer from '../components/Footer';
 
 export default {
 
-    name: 'App',
-    components: {
-        Header,
-        Main,
-        Categories,
-        Footer,
-    },
-    data() {
-        return {
-
-        }
-    },
-    created() {
-
-    },
-    methods: {
-
-    },
+	name: 'App',
+	components: {
+		Header,
+		Main,
+		Categories,
+		Footer,
+	},
+	data() {
+		return {
+			products: null,
+		}
+	},
+	created() {
+		
+	},
+	methods: {
+		fetchProducts() {
+			axios.get('http://127.0.0.1:8000/api/foods')
+			.then()
+			.catch();
+		},
+	},
 }
 </script>
 
