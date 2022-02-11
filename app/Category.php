@@ -6,7 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model
 {
-    public function foods() {
+    protected $table = 'category';
+    public function foods()
+    {
         return $this->belongsToMany('App\Food');
     }
 }

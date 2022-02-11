@@ -15171,7 +15171,11 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 module.exports = __webpack_require__(/*! C:\Users\misia\OneDrive\Desktop\carrefour-project\resources\js\front.js */"./resources/js/front.js");
+=======
+module.exports = __webpack_require__(/*! /Users/giulioincarbone/Desktop/Boolean/carrefour-project/resources/js/front.js */"./resources/js/front.js");
+>>>>>>> 3cba6f7d8185cfab0ba3118aba2e74909b6ee597
 
 
 /***/ })
