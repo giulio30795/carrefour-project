@@ -2,11 +2,14 @@
 <div>
 
 
-	  <Header />
-	  <Categories />
-	  <Main />
-	  <Footer />
- 
+	<Header />
+	<Categories />
+	<!-- <Main /> -->
+	<main>
+		<ProductsCarousel />
+	</main>
+	<Footer />
+
 </div>
 
 
@@ -30,14 +33,18 @@ export default {
 	},
 	data() {
 		return {
-
+			products: null,
 		}
 	},
 	created() {
-
+		
 	},
 	methods: {
-
+		fetchProducts() {
+			axios.get('http://127.0.0.1:8000/api/')
+			.then()
+			.catch();
+		},
 	},
 }
 </script>
