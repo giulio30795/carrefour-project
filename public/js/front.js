@@ -2164,7 +2164,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".product_carousel[data-v-9ee51962] {\n  width: 100%;\n  padding: 2rem 5%;\n}\n.product_carousel .heading[data-v-9ee51962] {\n  display: flex;\n  align-items: center;\n  margin-bottom: 2rem;\n}\n.product_carousel .heading .section_title[data-v-9ee51962] {\n  width: 80%;\n}\n.product_carousel .heading .nav_btns[data-v-9ee51962] {\n  width: 20%;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n.product_carousel .slides[data-v-9ee51962] {\n  display: flex;\n  flex-wrap: nowrap;\n  align-items: stretch;\n  overflow-x: auto;\n}", ""]);
+exports.push([module.i, ".product_carousel[data-v-9ee51962] {\n  height: 100%;\n  width: 100%;\n  padding: 2rem 5%;\n}\n.product_carousel .heading[data-v-9ee51962] {\n  display: flex;\n  align-items: center;\n  margin-bottom: 2rem;\n}\n.product_carousel .heading .section_title[data-v-9ee51962] {\n  width: 80%;\n}\n.product_carousel .heading .nav_btns[data-v-9ee51962] {\n  width: 20%;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n.product_carousel .slides[data-v-9ee51962] {\n  display: flex;\n  flex-wrap: nowrap;\n  align-items: stretch;\n  overflow-x: auto;\n}", ""]);
 
 // exports
 

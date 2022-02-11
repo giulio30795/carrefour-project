@@ -45,6 +45,7 @@ export default {
 <style lang="scss" scoped>
 
 .product_carousel {
+	height: 100%;
 	width: 100%;
 	padding: 2rem 5%;
 	.heading {
