@@ -2343,7 +2343,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".up[data-v-52a39182] {\n  display: flex;\n  align-items: center;\n  padding: 20px;\n}\n.down[data-v-52a39182] {\n  display: flex;\n  justify-content: space-between;\n}\n.down ul[data-v-52a39182] {\n  display: flex;\n  list-style: none;\n}\n.down ul a[data-v-52a39182] {\n  text-decoration: none;\n}\n.payback[data-v-52a39182] {\n  position: relative;\n  width: 170px;\n  height: 35px;\n  border-radius: 5px;\n  border: 1px solid #f0f6fb;\n}\n.payback img[data-v-52a39182] {\n  position: absolute;\n  width: 50px;\n}", ""]);
+exports.push([module.i, ".up[data-v-52a39182] {\n  display: flex;\n  align-items: center;\n  padding: 20px;\n}\n.down[data-v-52a39182] {\n  display: flex;\n  justify-content: space-between;\n  padding: 20px;\n}\n.down ul[data-v-52a39182] {\n  display: flex;\n  list-style: none;\n}\n.down ul a[data-v-52a39182] {\n  text-decoration: none;\n}\n.payback[data-v-52a39182] {\n  position: relative;\n  width: 170px;\n  height: 35px;\n  border-radius: 5px;\n  border: 1px solid #f0f6fb;\n}\n.payback img[data-v-52a39182] {\n  position: absolute;\n  left: -30px;\n  width: 50px;\n}", ""]);
 
 // exports
 

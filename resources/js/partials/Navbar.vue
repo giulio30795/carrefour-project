@@ -83,6 +83,7 @@ export default {
 .down{
     display: flex;
     justify-content: space-between;
+    padding: 20px;
     ul{
         display: flex;
         list-style: none;
@@ -102,6 +103,7 @@ export default {
     border: 1px solid #f0f6fb;
     img{
         position: absolute;
+        left:-30px;
         width: 50px;
     }
 }
