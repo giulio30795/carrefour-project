@@ -4,22 +4,26 @@
     <!--OVER IT-->
 
         <div class="up">
-            <div>
-                <img src="" alt="">
+            <span>
+                <img src="https://www.carrefour.it/on/demandware.static/Sites-carrefour-IT-Site/-/default/dwf3c21fa0/images/carrefour-logotype.svg" alt="">
+                <img src="https://www.carrefour.it/on/demandware.static/Sites-carrefour-IT-Site/-/default/dw44a8db04/images/carrefour-logomark.svg" alt="">
+            </span>
+            
+            <form action="">
+                <input type="text" class="form-control" name="" id="" value="">
+                <button>
+                    <i class="fa-regular fa-magnifying-glass"></i>
+                </button>
+            </form>
+            
+            <div class="payback" >
+                <img src="https://www.carrefour.it/on/demandware.static/Sites-carrefour-IT-Site/-/default/dw977fdad2/images/payback-ball.png" alt="">
+                <a href="">
+                    <div>PAYBACK</div>
+                    <div>Scopri Payback</div>
+                </a>
             </div>
-            <div>
-                <form action="">
-                    <input type="text" class="form-control" name="" id="" value="">
-                    <button>
-                        <i class="fa-regular fa-magnifying-glass"></i>
-                    </button>
-                </form>
-            </div>
-            <div>
-                <img src="" alt="">
-                <span>PAYBACK</span>
-                <span>Scopri Payback</span>
-            </div>
+
             <div>
                 <i class="fa-regular fa-cart-shopping-fast"></i>
             </div>
@@ -28,49 +32,35 @@
     <!--UNDER-->
 
         <div class="down">
-            <nav class="navbar navbar-expand">
-              <div class="container-fluid">
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Spesa Online</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="#">Elettronica e giocattoli</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                               Promozioni
-                            </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                           <li><a class="dropdown-item" href="#">Action</a></li>
-                           <li><a class="dropdown-item" href="#">Another action</a></li>
-                           <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                      <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Vivi di gusto</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                               Idee regalo
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                               <li><a class="dropdown-item" href="#">Action</a></li>
-                               <li><a class="dropdown-item" href="#">Another action</a></li>
-                               <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                      </ul>
-                    </div>
-                </div>
-             </div>
-           </nav>
+            <div class="nav" >
+                <ul>
+                    <li>
+                        <a href="">Spesa online</a>
+                    </li>
+                      <li>
+                        <a href="">Elettronica e giocattoli</a>
+                    </li>
+                      <li>
+                        <a href="">Promozioni</a><font-awesome-icon icon="fa-solid fa-caret-down" />
+                    </li>
+                </ul>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="">Vivi di gusto |</a>
+                    </li>
+                    <li>
+                        <a href="">Idee regalo |</a>
+                    </li>
+                    <li>
+                        <a href="">Spesa Smart |</a>
+                    </li>
+                    <li>
+                        <a href=""><strong>Accedi</strong></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </template>
@@ -83,5 +73,39 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.up{
+    display: flex;
+    align-items: center;
+    padding: 20px; 
+}
+
+.down{
+    display: flex;
+    justify-content: space-between;
+    ul{
+        display: flex;
+        list-style: none;
+        a{
+            text-decoration: none;
+        }
+    }
+
+ 
+}
+
+.payback{
+    position: relative;
+    width: 170px;
+    height: 35px;
+    border-radius:5px;
+    border: 1px solid #f0f6fb;
+    img{
+        position: absolute;
+        width: 50px;
+    }
+}
+
+
 
 </style>

@@ -1,5 +1,5 @@
 <template>
-     <div class="container banner d-flex">
+     <div class="container banner ">
          <div>
              <ul>
                 <li>
@@ -39,7 +39,22 @@ export default {
 
 .banner{
     height:25px;
-    
+    background-color: #1b3d79;
+    display: flex;
+    justify-content: space-between;
+
+    ul{
+        display: flex;
+        list-style: none;
+
+        a{
+            text-decoration: none;
+            color: #fff;
+            :hover{
+                color:#0970e6;
+            }
+        }
+    }
 }
 
 </style>
