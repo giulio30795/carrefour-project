@@ -2718,7 +2718,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".up[data-v-52a39182] {\n  display: flex;\n  width: 100%;\n  align-items: center;\n  padding: 20px;\n}\n.up .form[data-v-52a39182] {\n  width: 750px;\n  height: 40px;\n  color: #d5d5d5;\n  border-radius: 25px;\n  border: 1px solid #cfcfcf;\n  background-color: #cfcfcf;\n  margin: 0 auto;\n  position: relative;\n}\n.up .form div[data-v-52a39182] {\n  width: 30px;\n  height: 30px;\n  line-height: 30px;\n  border-radius: 25px;\n  background-color: #84b7f2;\n  text-align: center;\n  position: absolute;\n  right: 8px;\n  top: 4px;\n}\n.down[data-v-52a39182] {\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  padding: 20px;\n}\n.down ul[data-v-52a39182] {\n  display: flex;\n  list-style: none;\n}\n.down ul a[data-v-52a39182] {\n  text-decoration: none;\n  color: #14386b;\n}\n.down ul a[data-v-52a39182]:hover {\n  color: #3388ea;\n}\n.payback[data-v-52a39182] {\n  position: relative;\n  width: 165px;\n  height: 40px;\n  background-color: transparent;\n  border-radius: 8px;\n  border: 2px solid #d0e4f5;\n}\n.payback[data-v-52a39182]:hover {\n  background-color: #d0e4f5;\n}\n.payback img[data-v-52a39182] {\n  position: absolute;\n  left: -20px;\n  width: 37px;\n}\n.payback .pay[data-v-52a39182] {\n  text-decoration: none;\n}\n.payback .pay .top[data-v-52a39182] {\n  font-size: 10px;\n  color: #14386b;\n}\n.payback .pay .bot[data-v-52a39182] {\n  font-size: 17px;\n}", ""]);
+exports.push([module.i, ".up[data-v-52a39182] {\n  display: flex;\n  width: 100%;\n  align-items: center;\n  padding: 20px;\n}\n.up .cart[data-v-52a39182] {\n  margin: 0 30px;\n  font-size: 25px;\n}\n.up .form[data-v-52a39182] {\n  width: 750px;\n  height: 40px;\n  color: #d5d5d5;\n  border-radius: 25px;\n  border: 1px solid #f7f7f7;\n  background-color: #f7f7f7;\n  margin: 0 auto;\n  position: relative;\n}\n.up .form div[data-v-52a39182] {\n  width: 30px;\n  height: 30px;\n  line-height: 30px;\n  border-radius: 25px;\n  background-color: #84b7f2;\n  text-align: center;\n  position: absolute;\n  right: 8px;\n  top: 4px;\n}\n.down[data-v-52a39182] {\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  padding: 20px;\n}\n.down ul[data-v-52a39182] {\n  display: flex;\n  list-style: none;\n}\n.down ul a[data-v-52a39182] {\n  text-decoration: none;\n  color: #14386b;\n}\n.down ul a[data-v-52a39182]:hover {\n  color: #3388ea;\n}\n.payback[data-v-52a39182] {\n  position: relative;\n  width: 165px;\n  height: 38px;\n  background-color: transparent;\n  border-radius: 8px;\n  border: 2px solid #d0e4f5;\n}\n.payback[data-v-52a39182]:hover {\n  background-color: #d0e4f5;\n}\n.payback img[data-v-52a39182] {\n  position: absolute;\n  left: -20px;\n  width: 37px;\n}\n.payback .pay[data-v-52a39182] {\n  text-decoration: none;\n}\n.payback .pay .top[data-v-52a39182] {\n  font-size: 10px;\n  color: #14386b;\n}\n.payback .pay .bot[data-v-52a39182] {\n  font-size: 17px;\n}", ""]);
 
 // exports
 
@@ -2737,7 +2737,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n* {\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\tbox-sizing: border-box;\n}\nbody {\r\nbackground-color: #f7f7f7;\r\nfont-family: sans-serif;\n}\r\n", ""]);
+exports.push([module.i, "\n* {\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\tbox-sizing: border-box;\n}\nbody {\r\nbackground-color: #fff;\r\nfont-family: sans-serif;\n}\r\n", ""]);
 
 // exports
 
@@ -4516,7 +4516,7 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("li", [
             _c("a", { attrs: { href: "" } }, [
-              _c("i", { staticClass: "fa-light fa-location-dot" }),
+              _c("i", { staticClass: "fa-solid fa-location-dot me-1" }),
               _vm._v("Punti vendita"),
             ]),
             _c("span", [_vm._v("|")]),
@@ -4623,7 +4623,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("div", [
           _c("a", { attrs: { href: "" } }, [
-            _c("i", { staticClass: "fa-thin fa-cart-shopping-fast" }),
+            _c("i", { staticClass: "fa-solid fa-cart-shopping cart" }),
           ]),
         ]),
       ]),
@@ -4684,7 +4684,7 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("li", [
               _c("a", { attrs: { href: "" } }, [
-                _c("i", { staticClass: "fa-thin fa-user-large" }),
+                _c("i", { staticClass: "fa-solid fa-user me-1" }),
                 _c("strong", [_vm._v("Accedi")]),
                 _c("i", { staticClass: "fa-solid fa-caret-down ms-2" }),
               ]),

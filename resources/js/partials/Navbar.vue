@@ -11,7 +11,7 @@
                 </a>
             </span>
             
-            <form action="" class="form" >
+            <form action="" class="form">
                 <input type="text" class="form" name="" id="" value="" placeholder="Di cosa hai bisogno?">
                 <div>
                     <a href="" class="text-white" >
@@ -30,7 +30,7 @@
 
             <div>
                 <a href="">
-                    <i class="fa-thin fa-cart-shopping-fast"></i>
+                    <i class="fa-solid fa-cart-shopping cart"></i>
                 </a>
             </div>
         </div>
@@ -63,7 +63,7 @@
                         <a href="" class="me-4">Spesa Smart <i class="fa-solid fa-caret-down ms-2 me-2"></i>|</a>
                     </li>
                     <li>
-                        <a href=""><i class="fa-thin fa-user-large"></i><strong>Accedi</strong><i class="fa-solid fa-caret-down ms-2"></i></a>
+                        <a href=""><i class="fa-solid fa-user me-1"></i><strong>Accedi</strong><i class="fa-solid fa-caret-down ms-2"></i></a>
                     </li>
                 </ul>
             </div>
@@ -85,15 +85,20 @@ export default {
     display: flex;
     width: 100%;
     align-items: center;
-    padding: 20px; 
+    padding: 20px;
 
+    .cart{
+        margin: 0 30px;
+        font-size: 25px;
+    }
+    
     .form{
         width: 750px;
         height: 40px;
         color: #d5d5d5;
         border-radius: 25px;
-        border: 1px solid #cfcfcf;
-        background-color: #cfcfcf;
+        border: 1px solid #f7f7f7 ;
+        background-color: #f7f7f7;
         margin: 0 auto;
         position: relative;
 
@@ -107,9 +112,9 @@ export default {
             position: absolute;
             right: 8px;
             top: 4px;
-
         }
     }
+ 
 }
 
 .down{
@@ -129,12 +134,13 @@ export default {
                 }
         }
     } 
+
 }
 
 .payback{
     position: relative;
     width: 165px;
-    height: 40px;
+    height: 38px;
     background-color: transparent;
     border-radius: 8px;
     border: 2px solid #d0e4f5;

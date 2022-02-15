@@ -16,7 +16,7 @@
                     <a href="">Volantini</a><span>|</span>
                 </li>
                 <li>
-                    <a href=""><i class="fa-light fa-location-dot"></i>Punti vendita</a><span>|</span>
+                    <a href=""><i class="fa-solid fa-location-dot me-1"></i>Punti vendita</a><span>|</span>
                 </li>
                 <li>
                     <a href="">Servizi</a><span>|</span>
