@@ -73,7 +73,10 @@ export default {
 				console.log(response);
 				this.adds = response.data;
 			})
-
+			.catch(err => {
+				console.log(err);
+			});
+		},	
 		getCategories() {
 
 			axios.get('http://127.0.0.1:8000/api/category')
