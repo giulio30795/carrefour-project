@@ -1,5 +1,7 @@
 <template>
   <footer>
+      <PreFooter />
+      
       <div class="footer-social justify-content-between justify-content-lg-end align-items-center">
           <div class="social-text p-3">
               #restaconnesso
@@ -89,8 +91,13 @@
 </template>
 
 <script>
+import PreFooter from './PreFooter.vue';
+
 export default {
     name: 'Footer',
+    components: {
+        PreFooter,
+    },
     data() {
         return {
             navLinks: [
