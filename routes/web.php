@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Auth;
 
 
 Route::get('/', function () {
-    return view('welcome');
+	return view('welcome');
 });
 
 Auth::routes();
@@ -27,13 +27,13 @@ Route::middleware('auth')
 ->name('admin.')
 ->prefix('admin')
 ->group(function() {
-    Route::get('/', 'HomeController@index')->name('home');
-    Route::resource('/food', 'FoodController');
+	Route::get('/', 'HomeController@index')->name('home');
+	Route::resource('/food', 'FoodController');
 });
 
 
 Route::get('{any?}', function(){
-    return view('guest.home');
+	return view('guest.home');
 })->where('any', '.*');
 
 Auth::routes();
@@ -43,3 +43,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// FIXME le rotet sono incasinate, ho provato a sistemarle ma poi cambia il funzionamento dei link, per ora ho ripristinato ma così non va bene xD

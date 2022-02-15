@@ -7,7 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Food extends Model
 {
 
-    public function categories() {
+    public function categories()
+    {
         return $this->belongsToMany('App\Category');
     }
 
@@ -22,5 +23,8 @@ class Food extends Model
         'discount',
         'description',
     ];
-
+    public function allergens()
+    {
+        return $this->belongsToMany("App\Allergen");
+    }
 }
