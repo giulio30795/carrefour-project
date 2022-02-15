@@ -3,9 +3,9 @@
 
 
 	<Header />
-	<Categories />
 	<!-- <Main /> -->
 	<main>
+		<Categories :categories="categories"/>
 		<ProductsCarousel :products="products"/>
 	</main>
 	<Footer />
@@ -35,9 +35,11 @@ export default {
 	data() {
 		return {
 			products: null,
+			categories: null,
 		}
 	},
 	created() {
+		this.getCategories();
 		this.fetchProducts();
 	},
 	methods: {
@@ -47,6 +49,19 @@ export default {
 				console.log(response);
 				this.products = response.data;
 			})
+			.catch(err => {
+				console.log(err);
+			});
+		},
+		getCategories() {
+
+			axios.get('http://127.0.0.1:8000/api/category')
+
+			.then(response => {
+				console.log(response);
+				this.categories = response.data;
+			})
+
 			.catch(err => {
 				console.log(err);
 			});
