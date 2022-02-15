@@ -1929,7 +1929,317 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'Footer',
+  data: function data() {
+    return {
+      navLinks: [{
+        title: 'I nostri valori',
+        col: 1,
+        // Colonna per width large
+        show: false,
+        // show links on click for width smaller than lg
+        links: [{
+          text: 'Act For Food',
+          url: '#'
+        }]
+      }, {
+        title: 'Nel mondo',
+        col: 1,
+        // Colonna per width large
+        show: false,
+        // show links on click for width smaller than lg
+        links: [{
+          text: 'www.carrefour.com',
+          url: 'www.carrefour.com'
+        }]
+      }, {
+        title: 'Servizi',
+        col: 1,
+        // Colonna per width large
+        show: false,
+        // show links on click for width smaller than lg
+        links: [{
+          text: 'Carta SpesAmica',
+          url: '#'
+        }, {
+          text: 'PAYBACK',
+          url: '#'
+        }, {
+          text: 'Gift card',
+          url: '#'
+        }, {
+          text: 'Servizi Findomestic',
+          url: '#'
+        }, {
+          text: 'Carrefour Salute',
+          url: '#'
+        }, {
+          text: 'Carrefour Viaggi',
+          url: '#'
+        }, {
+          text: 'Carrefour Foto',
+          url: '#'
+        }, {
+          text: 'Richiamo prodotti',
+          url: '#'
+        }]
+      }, {
+        title: 'Area legale',
+        col: 2,
+        // Colonna per width large
+        show: false,
+        // show links on click for width smaller than lg
+        links: [{
+          text: 'Dati societari',
+          url: '#'
+        }, {
+          text: 'Tutela dei dati personali',
+          url: '#'
+        }, {
+          text: 'Garanzia legale di conformità',
+          url: '#'
+        }, {
+          text: 'Condizioni generali',
+          url: '#'
+        }, {
+          text: 'Condizioni generali di vendita',
+          url: '#'
+        }, {
+          text: 'Carta etica per i nostri fornitori',
+          url: '#'
+        }, {
+          text: 'Carta di impegno di Responsabilità Sociale d\'Impresa',
+          url: '#'
+        }, {
+          text: 'Modelli Organizzativi',
+          url: '#'
+        }, {
+          text: 'Informativa Cookie',
+          url: '#'
+        }, {
+          text: 'Gestisci preferenze cookie',
+          url: '#'
+        }]
+      }, {
+        title: 'Acquisti Online',
+        col: 2,
+        // Colonna per width large
+        show: false,
+        // show links on click for width smaller than lg
+        links: [{
+          text: 'Spesa veloce by Carrefour NOW',
+          url: '#'
+        }, {
+          text: 'Spesa Online',
+          url: '#'
+        }, {
+          text: 'Elettronica e Casa',
+          url: '#'
+        }, {
+          text: 'Offerte Online',
+          url: '#'
+        }, {
+          text: 'Abbonamento Carrefour Club',
+          url: '#'
+        }, {
+          text: 'Pagamento tramite Gift Card',
+          url: '#'
+        }, {
+          text: 'Soglie spese di spedizione',
+          url: '#'
+        }, {
+          text: 'Novità servizi spesa online',
+          url: '#'
+        }, {
+          text: 'App Carrefour',
+          url: '#'
+        }, {
+          text: 'Tutti i servizi online',
+          url: '#'
+        }]
+      }, {
+        title: 'Agevolazioni',
+        col: 3,
+        // Colonna per width large
+        show: false,
+        // show links on click for width smaller than lg
+        links: [{
+          text: 'Donne in Gravidanza e Neogenitori',
+          url: '#'
+        }, {
+          text: 'Over 60',
+          url: '#'
+        }, {
+          text: 'Diversamente Abili',
+          url: '#'
+        }, {
+          text: 'Regolamento',
+          url: '#'
+        }, {
+          text: 'Agevolazioni',
+          url: '#'
+        }]
+      }, {
+        title: 'Speciali del momento',
+        col: 3,
+        // Colonna per width large
+        show: false,
+        // show links on click for width smaller than lg
+        links: [{
+          text: 'Le Nostre Proposte di Spesa Online',
+          url: '#'
+        }, {
+          text: 'Le Nostre Proposte di Elettronica e Casa',
+          url: '#'
+        }, {
+          text: 'San Valentino 2022',
+          url: '#'
+        }, {
+          text: 'Prodotti Biologici Online',
+          url: '#'
+        }, {
+          text: 'Prodotti Senza Glutine',
+          url: '#'
+        }, {
+          text: 'Prodotti Senza Lattosio',
+          url: '#'
+        }, {
+          text: 'Prodotti Vegani',
+          url: '#'
+        }, {
+          text: 'Prodotti Vegetariani',
+          url: '#'
+        }, {
+          text: 'Prodotti Proteici',
+          url: '#'
+        }, {
+          text: 'Prodotti Senza Zucchero',
+          url: '#'
+        }, {
+          text: 'Vini Consigliati',
+          url: '#'
+        }, {
+          text: 'Giocattoli Online',
+          url: '#'
+        }, {
+          text: 'Elettrodomestici',
+          url: '#'
+        }, {
+          text: 'Samsung',
+          url: '#'
+        }, {
+          text: 'Smart Tv e Televisori',
+          url: '#'
+        }, {
+          text: 'Smartphone e Cellulari',
+          url: '#'
+        }, {
+          text: 'Tutti gli Speciali del Momento',
+          url: '#'
+        }]
+      }],
+      cols: 3
+    };
+  },
+  methods: {
+    navLinksMethod: function navLinksMethod(col) {
+      return this.navLinks.filter(function (i) {
+        return i.col === col;
+      });
+    },
+    showLinks: function showLinks(index, col) {
+      var links = this.navLinksMethod(col);
+      links[index].show = !links[index].show;
+    }
+  }
+});
 
 /***/ }),
 
@@ -2238,6 +2548,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Navbar'
 });
@@ -2314,6 +2630,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Footer.vue?vue&type=style&index=0&style=scoped&lang=scss&":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Footer.vue?vue&type=style&index=0&style=scoped&lang=scss& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".footer-social {\n  display: flex;\n  background: #1b3d79;\n  color: #fff;\n}\n.footer-social .social-images {\n  font-size: 2rem;\n}\n.footer-infos ul {\n  list-style: none;\n}\n.footer-infos ul li h4 {\n  color: #2b4b83;\n}\n.footer-infos ul li a {\n  text-decoration: none;\n  color: black;\n  font-size: 0.8rem;\n}\n.footer-infos ul .links {\n  display: block !important;\n}\n.footer-infos .footer-customer .border-customer {\n  border: 2px solid #d3e3f5;\n  border-radius: 8px;\n}\n.footer-infos .footer-customer .call-us .call-us-image {\n  background: #d3e3f5;\n}\n.footer-infos .footer-customer .call-us .call-us-number-text {\n  color: #979797;\n}\n.footer-infos .footer-customer .call-us .call-us-number {\n  color: #0970e6;\n}\n.payments .payments-text {\n  color: #0970e6;\n}\n.payments .payments-image i {\n  font-size: 2rem;\n  padding: 0.5rem;\n  background: #fff;\n}\n.sub-footer {\n  color: #979797;\n  background: #f7f7f7;\n  padding: 1rem;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ProductCard.vue?vue&type=style&index=0&id=1a457ff8&lang=scss&scoped=true&":
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ProductCard.vue?vue&type=style&index=0&id=1a457ff8&lang=scss&scoped=true& ***!
@@ -2364,7 +2699,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".banner[data-v-c885b480] {\n  height: 25px;\n  background-color: #1b3d79;\n  display: flex;\n  justify-content: space-between;\n}\n.banner ul[data-v-c885b480] {\n  display: flex;\n  list-style: none;\n}\n.banner ul a[data-v-c885b480] {\n  text-decoration: none;\n  color: #fff;\n}\n.banner ul a[data-v-c885b480] :hover {\n  color: #0970e6;\n}", ""]);
+exports.push([module.i, ".banner[data-v-c885b480] {\n  width: 100%;\n  height: 30px;\n  line-height: 30px;\n  background-color: #1b3d79;\n  display: flex;\n  justify-content: space-between;\n}\n.banner ul[data-v-c885b480] {\n  display: flex;\n  list-style: none;\n}\n.banner ul span[data-v-c885b480] {\n  color: #fff;\n}\n.banner ul a[data-v-c885b480] {\n  text-decoration: none;\n  font-size: 15px;\n  padding: 0 10px;\n  color: #fff;\n}\n.banner ul a[data-v-c885b480]:hover {\n  color: #0970e6;\n}", ""]);
 
 // exports
 
@@ -2383,7 +2718,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".up[data-v-52a39182] {\n  display: flex;\n  align-items: center;\n  padding: 20px;\n}\n.down[data-v-52a39182] {\n  display: flex;\n  justify-content: space-between;\n  padding: 20px;\n}\n.down ul[data-v-52a39182] {\n  display: flex;\n  list-style: none;\n}\n.down ul a[data-v-52a39182] {\n  text-decoration: none;\n}\n.payback[data-v-52a39182] {\n  position: relative;\n  width: 170px;\n  height: 35px;\n  border-radius: 5px;\n  border: 1px solid #f0f6fb;\n}\n.payback img[data-v-52a39182] {\n  position: absolute;\n  left: -30px;\n  width: 50px;\n}", ""]);
+exports.push([module.i, ".up[data-v-52a39182] {\n  display: flex;\n  width: 100%;\n  align-items: center;\n  padding: 20px;\n}\n.up .form[data-v-52a39182] {\n  width: 750px;\n  height: 40px;\n  color: #d5d5d5;\n  border-radius: 25px;\n  border: 1px solid #cfcfcf;\n  background-color: #cfcfcf;\n  margin: 0 auto;\n  position: relative;\n}\n.up .form div[data-v-52a39182] {\n  width: 30px;\n  height: 30px;\n  line-height: 30px;\n  border-radius: 25px;\n  background-color: #84b7f2;\n  text-align: center;\n  position: absolute;\n  right: 8px;\n  top: 4px;\n}\n.down[data-v-52a39182] {\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  padding: 20px;\n}\n.down ul[data-v-52a39182] {\n  display: flex;\n  list-style: none;\n}\n.down ul a[data-v-52a39182] {\n  text-decoration: none;\n  color: #14386b;\n}\n.down ul a[data-v-52a39182]:hover {\n  color: #3388ea;\n}\n.payback[data-v-52a39182] {\n  position: relative;\n  width: 165px;\n  height: 40px;\n  background-color: transparent;\n  border-radius: 8px;\n  border: 2px solid #d0e4f5;\n}\n.payback[data-v-52a39182]:hover {\n  background-color: #d0e4f5;\n}\n.payback img[data-v-52a39182] {\n  position: absolute;\n  left: -20px;\n  width: 37px;\n}\n.payback .pay[data-v-52a39182] {\n  text-decoration: none;\n}\n.payback .pay .top[data-v-52a39182] {\n  font-size: 10px;\n  color: #14386b;\n}\n.payback .pay .bot[data-v-52a39182] {\n  font-size: 17px;\n}", ""]);
 
 // exports
 
@@ -2886,6 +3221,36 @@ process.umask = function() { return 0; };
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js"), __webpack_require__(/*! ./../process/browser.js */ "./node_modules/process/browser.js")))
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Footer.vue?vue&type=style&index=0&style=scoped&lang=scss&":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Footer.vue?vue&type=style&index=0&style=scoped&lang=scss& ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../../node_modules/vue-loader/lib??vue-loader-options!./Footer.vue?vue&type=style&index=0&style=scoped&lang=scss& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Footer.vue?vue&type=style&index=0&style=scoped&lang=scss&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
 
 /***/ }),
 
@@ -3662,9 +4027,261 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div")
+  return _c("footer", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "footer-infos p-5" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("nav", { staticClass: "col-12 col-lg-7 px-4" }, [
+          _c(
+            "div",
+            { staticClass: "row" },
+            _vm._l(_vm.cols, function (i) {
+              return _c(
+                "div",
+                { key: "col-" + i, staticClass: "col-12 col-lg-4" },
+                _vm._l(_vm.navLinksMethod(i), function (navLink, index) {
+                  return _c(
+                    "ul",
+                    {
+                      key: "navLink-" + index,
+                      on: {
+                        click: function ($event) {
+                          return _vm.showLinks(index, i)
+                        },
+                      },
+                    },
+                    [
+                      _c(
+                        "li",
+                        { staticClass: "d-flex justify-content-between" },
+                        [
+                          _c("h4", [_vm._v(_vm._s(navLink.title))]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "d-lg-none me-5" }, [
+                            _c(
+                              "h4",
+                              {
+                                staticClass: "d-none",
+                                class: { links: !navLink.show },
+                              },
+                              [_vm._v("+")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "h4",
+                              {
+                                staticClass: "d-none",
+                                class: { links: navLink.show },
+                              },
+                              [_vm._v("-")]
+                            ),
+                          ]),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _vm._l(navLink.links, function (link, index) {
+                        return _c(
+                          "li",
+                          {
+                            key: "link-" + index,
+                            staticClass: "d-none d-lg-block",
+                            class: { links: navLink.show },
+                          },
+                          [
+                            _c("a", { attrs: { href: link.url } }, [
+                              _vm._v(_vm._s(link.text)),
+                            ]),
+                          ]
+                        )
+                      }),
+                    ],
+                    2
+                  )
+                }),
+                0
+              )
+            }),
+            0
+          ),
+        ]),
+        _vm._v(" "),
+        _vm._m(1),
+      ]),
+    ]),
+    _vm._v(" "),
+    _c("hr"),
+    _vm._v(" "),
+    _vm._m(2),
+    _vm._v(" "),
+    _vm._m(3),
+  ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "footer-social justify-content-between justify-content-lg-end align-items-center",
+      },
+      [
+        _c("div", { staticClass: "social-text p-3" }, [
+          _vm._v("\n            #restaconnesso\n        "),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "social-images p-3" }, [
+          _c("i", { staticClass: "fab fa-facebook-square" }),
+          _vm._v(" "),
+          _c("i", { staticClass: "fab fa-twitter-square" }),
+          _vm._v(" "),
+          _c("i", { staticClass: "fab fa-instagram-square" }),
+          _vm._v(" "),
+          _c("i", { staticClass: "fab fa-youtube-square" }),
+          _vm._v(" "),
+          _c("i", { staticClass: "fab fa-linkedin" }),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "footer-customer col-12 col-lg-5 p-4" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-12 border-customer mx-3 mb-2" }, [
+          _c("div", { staticClass: "row call-us" }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "col-6 d-flex justify-content-center align-items-center call-us-image",
+              },
+              [
+                _c("img", {
+                  attrs: {
+                    alt: "call us",
+                    src: "https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dwd3d279b3/call-us.png",
+                  },
+                }),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "col-6 d-flex flex-column justify-content-center align-items-center",
+              },
+              [
+                _c("div", { staticClass: "text-uppercase" }, [
+                  _vm._v("Chiamaci"),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "call-us-number-text" }, [
+                  _vm._v("al numero verde"),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "call-us-number" }, [
+                  _vm._v("800 650 650"),
+                ]),
+              ]
+            ),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-12 pe-0" }, [
+          _c("div", { staticClass: "row justify-content-between" }, [
+            _c("div", { staticClass: "col-6 pe-0" }, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "border-customer d-flex flex-column justify-content-center align-items-center text-uppercase py-3",
+                },
+                [
+                  _c("img", {
+                    attrs: {
+                      alt: "punti vendita",
+                      src: "https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dw680dbb0b/point-of-service.png",
+                    },
+                  }),
+                  _vm._v(
+                    "\n                                  Trova un \n                                  "
+                  ),
+                  _c("strong", [_vm._v("Punto vendita")]),
+                ]
+              ),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-6 pe-0" }, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "border-customer d-flex flex-column justify-content-center align-items-center text-uppercase pb-4",
+                },
+                [
+                  _c("img", {
+                    attrs: {
+                      alt: "servizio clienti",
+                      src: "https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dw73041029/contact-service.png",
+                    },
+                  }),
+                  _vm._v(
+                    "\n                                  Contatta il \n                                  "
+                  ),
+                  _c("strong", [_vm._v("servizio clienti")]),
+                ]
+              ),
+            ]),
+          ]),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "payments d-flex flex-column justify-content-center align-items-center",
+      },
+      [
+        _c("div", { staticClass: "payments-text" }, [
+          _vm._v("Metodi di pagamento"),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "payments-image d-flex" }, [
+          _c("i", { staticClass: "fab fa-cc-visa" }),
+          _vm._v(" "),
+          _c("i", { staticClass: "fab fa-cc-mastercard" }),
+          _vm._v(" "),
+          _c("i", { staticClass: "fab fa-cc-amex" }),
+          _vm._v(" "),
+          _c("i", { staticClass: "fab fa-cc-paypal" }),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "sub-footer" }, [
+      _c("div", { staticClass: "text-center" }, [
+        _vm._v("© 2022 Carrefour.it – P.IVA N. 12683790153"),
+      ]),
+    ])
+  },
+]
 render._withStripped = true
 
 
@@ -3874,7 +4491,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container banner " }, [
+    return _c("div", { staticClass: "banner" }, [
       _c("div", [
         _c("ul", [
           _c("li", [
@@ -3887,20 +4504,28 @@ var staticRenderFns = [
         _c("ul", [
           _c("li", [
             _c("a", { attrs: { href: "" } }, [
-              _c("strong", [_vm._v("Serve aiuto? |")]),
+              _c("strong", [_vm._v("Serve aiuto?")]),
             ]),
+            _c("span", [_vm._v("|")]),
           ]),
           _vm._v(" "),
-          _c("li", [_c("a", { attrs: { href: "" } }, [_vm._v("Volantini |")])]),
+          _c("li", [
+            _c("a", { attrs: { href: "" } }, [_vm._v("Volantini")]),
+            _c("span", [_vm._v("|")]),
+          ]),
           _vm._v(" "),
           _c("li", [
             _c("a", { attrs: { href: "" } }, [
-              _c("i", { staticClass: "fa-regular fa-location-dot" }),
-              _vm._v("Punti vendita |"),
+              _c("i", { staticClass: "fa-light fa-location-dot" }),
+              _vm._v("Punti vendita"),
             ]),
+            _c("span", [_vm._v("|")]),
           ]),
           _vm._v(" "),
-          _c("li", [_c("a", { attrs: { href: "" } }, [_vm._v("Servizi |")])]),
+          _c("li", [
+            _c("a", { attrs: { href: "" } }, [_vm._v("Servizi")]),
+            _c("span", [_vm._v("|")]),
+          ]),
           _vm._v(" "),
           _c("li", [
             _c("a", { attrs: { href: "" } }, [
@@ -3933,116 +4558,138 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
-    _vm._m(0),
-    _vm._v(" "),
-    _c("div", { staticClass: "down" }, [
-      _c("div", { staticClass: "nav" }, [
-        _c("ul", [
-          _vm._m(1),
-          _vm._v(" "),
-          _vm._m(2),
-          _vm._v(" "),
-          _c(
-            "li",
-            [
-              _c("a", { attrs: { href: "" } }, [_vm._v("Promozioni")]),
-              _c("font-awesome-icon", {
-                attrs: { icon: "fa-solid fa-caret-down" },
-              }),
-            ],
-            1
-          ),
-        ]),
-      ]),
-      _vm._v(" "),
-      _vm._m(3),
-    ]),
-  ])
+  return _vm._m(0)
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "up" }, [
-      _c("span", [
-        _c("img", {
-          attrs: {
-            src: "https://www.carrefour.it/on/demandware.static/Sites-carrefour-IT-Site/-/default/dwf3c21fa0/images/carrefour-logotype.svg",
-            alt: "",
-          },
-        }),
-        _vm._v(" "),
-        _c("img", {
-          attrs: {
-            src: "https://www.carrefour.it/on/demandware.static/Sites-carrefour-IT-Site/-/default/dw44a8db04/images/carrefour-logomark.svg",
-            alt: "",
-          },
-        }),
-      ]),
-      _vm._v(" "),
-      _c("form", { attrs: { action: "" } }, [
-        _c("input", {
-          staticClass: "form-control",
-          attrs: { type: "text", name: "", id: "", value: "" },
-        }),
-        _vm._v(" "),
-        _c("button", [
-          _c("i", { staticClass: "fa-regular fa-magnifying-glass" }),
+    return _c("div", { staticClass: "navbar" }, [
+      _c("div", { staticClass: "up" }, [
+        _c("span", [
+          _c("a", { attrs: { href: "" } }, [
+            _c("img", {
+              attrs: {
+                src: "https://www.carrefour.it/on/demandware.static/Sites-carrefour-IT-Site/-/default/dwf3c21fa0/images/carrefour-logotype.svg",
+                alt: "",
+              },
+            }),
+            _vm._v(" "),
+            _c("img", {
+              attrs: {
+                src: "https://www.carrefour.it/on/demandware.static/Sites-carrefour-IT-Site/-/default/dw44a8db04/images/carrefour-logomark.svg",
+                alt: "",
+              },
+            }),
+          ]),
         ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "payback" }, [
-        _c("img", {
-          attrs: {
-            src: "https://www.carrefour.it/on/demandware.static/Sites-carrefour-IT-Site/-/default/dw977fdad2/images/payback-ball.png",
-            alt: "",
-          },
-        }),
         _vm._v(" "),
-        _c("a", { attrs: { href: "" } }, [
-          _c("div", [_vm._v("PAYBACK")]),
+        _c("form", { staticClass: "form", attrs: { action: "" } }, [
+          _c("input", {
+            staticClass: "form",
+            attrs: {
+              type: "text",
+              name: "",
+              id: "",
+              value: "",
+              placeholder: "Di cosa hai bisogno?",
+            },
+          }),
           _vm._v(" "),
-          _c("div", [_vm._v("Scopri Payback")]),
+          _c("div", [
+            _c("a", { staticClass: "text-white", attrs: { href: "" } }, [
+              _c("i", { staticClass: "fa-solid fa-magnifying-glass" }),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "payback" }, [
+          _c("img", {
+            attrs: {
+              src: "https://www.carrefour.it/on/demandware.static/Sites-carrefour-IT-Site/-/default/dw977fdad2/images/payback-ball.png",
+              alt: "",
+            },
+          }),
+          _vm._v(" "),
+          _c("a", { staticClass: "pay text-center", attrs: { href: "" } }, [
+            _c("div", { staticClass: "top" }, [_vm._v("PAYBACK")]),
+            _vm._v(" "),
+            _c("div", { staticClass: "bot" }, [
+              _c("strong", [_vm._v("Scopri Payback")]),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", [
+          _c("a", { attrs: { href: "" } }, [
+            _c("i", { staticClass: "fa-thin fa-cart-shopping-fast" }),
+          ]),
         ]),
       ]),
       _vm._v(" "),
-      _c("div", [_c("i", { staticClass: "fa-regular fa-cart-shopping-fast" })]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "" } }, [_vm._v("Spesa online")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "" } }, [_vm._v("Elettronica e giocattoli")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "nav" }, [
-      _c("ul", [
-        _c("li", [
-          _c("a", { attrs: { href: "" } }, [_vm._v("Vivi di gusto |")]),
+      _c("div", { staticClass: "down" }, [
+        _c("div", { staticClass: "nav" }, [
+          _c("ul", { staticClass: "ps-0" }, [
+            _c("li", [
+              _c("a", { staticClass: "me-4", attrs: { href: "" } }, [
+                _vm._v("Spesa online"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { staticClass: "me-4", attrs: { href: "" } }, [
+                _vm._v("Elettronica e giocattoli"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { staticClass: "me-4", attrs: { href: "" } }, [
+                _vm._v("Promozioni"),
+                _c("i", { staticClass: "fa-solid fa-caret-down ms-2 me-2" }),
+              ]),
+            ]),
+          ]),
         ]),
         _vm._v(" "),
-        _c("li", [_c("a", { attrs: { href: "" } }, [_vm._v("Idee regalo |")])]),
-        _vm._v(" "),
-        _c("li", [_c("a", { attrs: { href: "" } }, [_vm._v("Spesa Smart |")])]),
-        _vm._v(" "),
-        _c("li", [
-          _c("a", { attrs: { href: "" } }, [_c("strong", [_vm._v("Accedi")])]),
+        _c("div", { staticClass: "nav" }, [
+          _c("ul", [
+            _c("li", [
+              _c(
+                "a",
+                { staticClass: "me-4 text-secondary", attrs: { href: "" } },
+                [_vm._v("Vivi di gusto |")]
+              ),
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c(
+                "a",
+                { staticClass: "me-4 text-secondary", attrs: { href: "" } },
+                [
+                  _vm._v("Idee regalo "),
+                  _c("i", { staticClass: "fa-solid fa-caret-down ms-2 me-2" }),
+                  _vm._v("|"),
+                ]
+              ),
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { staticClass: "me-4", attrs: { href: "" } }, [
+                _vm._v("Spesa Smart "),
+                _c("i", { staticClass: "fa-solid fa-caret-down ms-2 me-2" }),
+                _vm._v("|"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "" } }, [
+                _c("i", { staticClass: "fa-thin fa-user-large" }),
+                _c("strong", [_vm._v("Accedi")]),
+                _c("i", { staticClass: "fa-solid fa-caret-down ms-2" }),
+              ]),
+            ]),
+          ]),
         ]),
       ]),
     ])
@@ -16352,7 +16999,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Footer_vue_vue_type_template_id_61a7c374___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Footer.vue?vue&type=template&id=61a7c374& */ "./resources/js/components/Footer.vue?vue&type=template&id=61a7c374&");
 /* harmony import */ var _Footer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Footer.vue?vue&type=script&lang=js& */ "./resources/js/components/Footer.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _Footer_vue_vue_type_style_index_0_style_scoped_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Footer.vue?vue&type=style&index=0&style=scoped&lang=scss& */ "./resources/js/components/Footer.vue?vue&type=style&index=0&style=scoped&lang=scss&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -16360,7 +17009,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _Footer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _Footer_vue_vue_type_template_id_61a7c374___WEBPACK_IMPORTED_MODULE_0__["render"],
   _Footer_vue_vue_type_template_id_61a7c374___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -16389,6 +17038,22 @@ component.options.__file = "resources/js/components/Footer.vue"
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Footer.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Footer.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Footer.vue?vue&type=style&index=0&style=scoped&lang=scss&":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/components/Footer.vue?vue&type=style&index=0&style=scoped&lang=scss& ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_style_index_0_style_scoped_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../../node_modules/vue-loader/lib??vue-loader-options!./Footer.vue?vue&type=style&index=0&style=scoped&lang=scss& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Footer.vue?vue&type=style&index=0&style=scoped&lang=scss&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_style_index_0_style_scoped_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_style_index_0_style_scoped_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_style_index_0_style_scoped_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_style_index_0_style_scoped_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
 
 /***/ }),
 
@@ -16483,15 +17148,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!*************************************************!*\
   !*** ./resources/js/components/ProductCard.vue ***!
   \*************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ProductCard_vue_vue_type_template_id_1a457ff8_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ProductCard.vue?vue&type=template&id=1a457ff8&scoped=true& */ "./resources/js/components/ProductCard.vue?vue&type=template&id=1a457ff8&scoped=true&");
 /* harmony import */ var _ProductCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ProductCard.vue?vue&type=script&lang=js& */ "./resources/js/components/ProductCard.vue?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _ProductCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _ProductCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _ProductCard_vue_vue_type_style_index_0_id_1a457ff8_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ProductCard.vue?vue&type=style&index=0&id=1a457ff8&lang=scss&scoped=true& */ "./resources/js/components/ProductCard.vue?vue&type=style&index=0&id=1a457ff8&lang=scss&scoped=true&");
+/* empty/unused harmony star reexport *//* harmony import */ var _ProductCard_vue_vue_type_style_index_0_id_1a457ff8_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ProductCard.vue?vue&type=style&index=0&id=1a457ff8&lang=scss&scoped=true& */ "./resources/js/components/ProductCard.vue?vue&type=style&index=0&id=1a457ff8&lang=scss&scoped=true&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -16523,7 +17187,7 @@ component.options.__file = "resources/js/components/ProductCard.vue"
 /*!**************************************************************************!*\
   !*** ./resources/js/components/ProductCard.vue?vue&type=script&lang=js& ***!
   \**************************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
