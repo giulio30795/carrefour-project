@@ -3,14 +3,14 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Category;
 use Illuminate\Http\Request;
+use App\Banner;
 
-class CategoryController extends Controller
+class BannerController extends Controller
 {
     public function index(){
-        $categories = Category::all();
+        $banners = Banner::all();
     
-        return response()->json($categories);
+        return response()->json($banners);
     }
 }

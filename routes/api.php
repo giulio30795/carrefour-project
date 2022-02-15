@@ -18,5 +18,6 @@ Route::namespace('Api')
 ->group(function () {
     Route::get('/foods', 'FoodController@index');
     Route::get('/category', 'CategoryController@index');
+    Route::get('/banners', 'BannerController@index');
     
 });
