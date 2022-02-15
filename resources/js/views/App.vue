@@ -3,11 +3,18 @@
 
 
 	<Header />
-	<Categories />
-	<CarouselPubblicita />
+
+	
+	
+
+
 	<!-- <Main /> -->
 	<main>
+    
+		<Categories :categories="categories"/>
+    <CarouselPubblicita />
 		<ProductsCarousel :products="products"/>
+		<AddsCarousel :adds="adds"/>
 	</main>
 	<Footer />
 
@@ -24,11 +31,12 @@ import Categories from '../components/Categories';
 import CarouselPubblicita from '../components/CarouselPubblicita';
 import Footer from '../components/Footer';
 import ProductsCarousel from '../components/ProductsCarousel';
-
+import AddsCarousel from '../components/AddsCarousel';
 export default {
 
 	name: 'App',
 	components: {
+		AddsCarousel,
 		Header,
 		CarouselPubblicita,
 		ProductsCarousel,
@@ -38,10 +46,14 @@ export default {
 	data() {
 		return {
 			products: null,
+			adds:null,
+			categories: null,
 		}
 	},
 	created() {
+		this.getCategories();
 		this.fetchProducts();
+    this.fetchBanners();
 	},
 	methods: {
 		fetchProducts() {
@@ -49,6 +61,26 @@ export default {
 			.then(response => {
 				console.log(response);
 				this.products = response.data;
+			})
+			.catch(err => {
+				console.log(err);
+			});
+		},
+
+		fetchBanners() {
+			axios.get('http://127.0.0.1:8000/api/banners')
+			.then(response => {
+				console.log(response);
+				this.adds = response.data;
+			})
+
+		getCategories() {
+
+			axios.get('http://127.0.0.1:8000/api/category')
+
+			.then(response => {
+				console.log(response);
+				this.categories = response.data;
 			})
 			.catch(err => {
 				console.log(err);
@@ -65,7 +97,7 @@ export default {
 	box-sizing: border-box;
 }
 body {
-background-color: #f7f7f7;
+background-color: #fff;
 font-family: sans-serif;
 }
 </style>

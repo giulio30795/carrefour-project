@@ -1,5 +1,5 @@
 <template>
-     <div class="container banner ">
+     <div class="banner">
          <div>
              <ul>
                 <li>
@@ -10,16 +10,16 @@
          <div>
              <ul>
                 <li>
-                    <a href=""><strong>Serve aiuto? |</strong></a>
+                    <a href=""><strong>Serve aiuto?</strong></a><span>|</span>
                 </li>
                 <li>
-                    <a href="">Volantini |</a>
+                    <a href="">Volantini</a><span>|</span>
                 </li>
                 <li>
-                    <a href=""><i class="fa-regular fa-location-dot"></i>Punti vendita |</a>
+                    <a href=""><i class="fa-solid fa-location-dot me-1"></i>Punti vendita</a><span>|</span>
                 </li>
                 <li>
-                    <a href="">Servizi |</a>
+                    <a href="">Servizi</a><span>|</span>
                 </li>
                 <li>
                     <a href="">Carta Carrefour Findomestic</a>
@@ -38,7 +38,9 @@ export default {
 <style lang="scss" scoped>
 
 .banner{
-    height:25px;
+    width: 100%;
+    height:30px;
+    line-height:30px;
     background-color: #1b3d79;
     display: flex;
     justify-content: space-between;
@@ -47,10 +49,16 @@ export default {
         display: flex;
         list-style: none;
 
+        span{
+            color: #fff;
+        }
+
         a{
             text-decoration: none;
+            font-size: 15px;
+            padding: 0 10px;
             color: #fff;
-            :hover{
+            &:hover{
                 color:#0970e6;
             }
         }
