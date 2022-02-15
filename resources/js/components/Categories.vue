@@ -88,7 +88,7 @@ export default {
     position: absolute;
     background-color: #0970e5;
     transform: translateY(-50%);
-    padding: 8px 12px;
+    padding: 8px 14px;
     border-radius: 50%;
     color: white;
 }
