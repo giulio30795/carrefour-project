@@ -2,8 +2,7 @@
     <div class="container-categories">
         <div class="categories">
 
-            <div class="icon">
-                {{icon}}
+            <div v-html="icon" class="icon">
             </div>
 
             <span class="category-name">
