@@ -1899,6 +1899,27 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CarouselPubblicita.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CarouselPubblicita.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'CarouselPubblicita'
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Categories.vue?vue&type=script&lang=js&":
 /*!*********************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Categories.vue?vue&type=script&lang=js& ***!
@@ -1929,7 +1950,317 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'Footer',
+  data: function data() {
+    return {
+      navLinks: [{
+        title: 'I nostri valori',
+        col: 1,
+        // Colonna per width large
+        show: false,
+        // show links on click for width smaller than lg
+        links: [{
+          text: 'Act For Food',
+          url: '#'
+        }]
+      }, {
+        title: 'Nel mondo',
+        col: 1,
+        // Colonna per width large
+        show: false,
+        // show links on click for width smaller than lg
+        links: [{
+          text: 'www.carrefour.com',
+          url: 'www.carrefour.com'
+        }]
+      }, {
+        title: 'Servizi',
+        col: 1,
+        // Colonna per width large
+        show: false,
+        // show links on click for width smaller than lg
+        links: [{
+          text: 'Carta SpesAmica',
+          url: '#'
+        }, {
+          text: 'PAYBACK',
+          url: '#'
+        }, {
+          text: 'Gift card',
+          url: '#'
+        }, {
+          text: 'Servizi Findomestic',
+          url: '#'
+        }, {
+          text: 'Carrefour Salute',
+          url: '#'
+        }, {
+          text: 'Carrefour Viaggi',
+          url: '#'
+        }, {
+          text: 'Carrefour Foto',
+          url: '#'
+        }, {
+          text: 'Richiamo prodotti',
+          url: '#'
+        }]
+      }, {
+        title: 'Area legale',
+        col: 2,
+        // Colonna per width large
+        show: false,
+        // show links on click for width smaller than lg
+        links: [{
+          text: 'Dati societari',
+          url: '#'
+        }, {
+          text: 'Tutela dei dati personali',
+          url: '#'
+        }, {
+          text: 'Garanzia legale di conformità',
+          url: '#'
+        }, {
+          text: 'Condizioni generali',
+          url: '#'
+        }, {
+          text: 'Condizioni generali di vendita',
+          url: '#'
+        }, {
+          text: 'Carta etica per i nostri fornitori',
+          url: '#'
+        }, {
+          text: 'Carta di impegno di Responsabilità Sociale d\'Impresa',
+          url: '#'
+        }, {
+          text: 'Modelli Organizzativi',
+          url: '#'
+        }, {
+          text: 'Informativa Cookie',
+          url: '#'
+        }, {
+          text: 'Gestisci preferenze cookie',
+          url: '#'
+        }]
+      }, {
+        title: 'Acquisti Online',
+        col: 2,
+        // Colonna per width large
+        show: false,
+        // show links on click for width smaller than lg
+        links: [{
+          text: 'Spesa veloce by Carrefour NOW',
+          url: '#'
+        }, {
+          text: 'Spesa Online',
+          url: '#'
+        }, {
+          text: 'Elettronica e Casa',
+          url: '#'
+        }, {
+          text: 'Offerte Online',
+          url: '#'
+        }, {
+          text: 'Abbonamento Carrefour Club',
+          url: '#'
+        }, {
+          text: 'Pagamento tramite Gift Card',
+          url: '#'
+        }, {
+          text: 'Soglie spese di spedizione',
+          url: '#'
+        }, {
+          text: 'Novità servizi spesa online',
+          url: '#'
+        }, {
+          text: 'App Carrefour',
+          url: '#'
+        }, {
+          text: 'Tutti i servizi online',
+          url: '#'
+        }]
+      }, {
+        title: 'Agevolazioni',
+        col: 3,
+        // Colonna per width large
+        show: false,
+        // show links on click for width smaller than lg
+        links: [{
+          text: 'Donne in Gravidanza e Neogenitori',
+          url: '#'
+        }, {
+          text: 'Over 60',
+          url: '#'
+        }, {
+          text: 'Diversamente Abili',
+          url: '#'
+        }, {
+          text: 'Regolamento',
+          url: '#'
+        }, {
+          text: 'Agevolazioni',
+          url: '#'
+        }]
+      }, {
+        title: 'Speciali del momento',
+        col: 3,
+        // Colonna per width large
+        show: false,
+        // show links on click for width smaller than lg
+        links: [{
+          text: 'Le Nostre Proposte di Spesa Online',
+          url: '#'
+        }, {
+          text: 'Le Nostre Proposte di Elettronica e Casa',
+          url: '#'
+        }, {
+          text: 'San Valentino 2022',
+          url: '#'
+        }, {
+          text: 'Prodotti Biologici Online',
+          url: '#'
+        }, {
+          text: 'Prodotti Senza Glutine',
+          url: '#'
+        }, {
+          text: 'Prodotti Senza Lattosio',
+          url: '#'
+        }, {
+          text: 'Prodotti Vegani',
+          url: '#'
+        }, {
+          text: 'Prodotti Vegetariani',
+          url: '#'
+        }, {
+          text: 'Prodotti Proteici',
+          url: '#'
+        }, {
+          text: 'Prodotti Senza Zucchero',
+          url: '#'
+        }, {
+          text: 'Vini Consigliati',
+          url: '#'
+        }, {
+          text: 'Giocattoli Online',
+          url: '#'
+        }, {
+          text: 'Elettrodomestici',
+          url: '#'
+        }, {
+          text: 'Samsung',
+          url: '#'
+        }, {
+          text: 'Smart Tv e Televisori',
+          url: '#'
+        }, {
+          text: 'Smartphone e Cellulari',
+          url: '#'
+        }, {
+          text: 'Tutti gli Speciali del Momento',
+          url: '#'
+        }]
+      }],
+      cols: 3
+    };
+  },
+  methods: {
+    navLinksMethod: function navLinksMethod(col) {
+      return this.navLinks.filter(function (i) {
+        return i.col === col;
+      });
+    },
+    showLinks: function showLinks(index, col) {
+      var links = this.navLinksMethod(col);
+      links[index].show = !links[index].show;
+    }
+  }
+});
 
 /***/ }),
 
@@ -2257,8 +2588,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Header */ "./resources/js/components/Header.vue");
 /* harmony import */ var _components_Categories__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Categories */ "./resources/js/components/Categories.vue");
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Footer */ "./resources/js/components/Footer.vue");
-/* harmony import */ var _components_ProductsCarousel__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/ProductsCarousel */ "./resources/js/components/ProductsCarousel.vue");
+/* harmony import */ var _components_CarouselPubblicita__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/CarouselPubblicita */ "./resources/js/components/CarouselPubblicita.vue");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Footer */ "./resources/js/components/Footer.vue");
+/* harmony import */ var _components_ProductsCarousel__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/ProductsCarousel */ "./resources/js/components/ProductsCarousel.vue");
 //
 //
 //
@@ -2276,6 +2608,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+
 
  // import Main from '../components/Main';
 
@@ -2286,9 +2620,10 @@ __webpack_require__.r(__webpack_exports__);
   name: 'App',
   components: {
     Header: _components_Header__WEBPACK_IMPORTED_MODULE_1__["default"],
-    ProductsCarousel: _components_ProductsCarousel__WEBPACK_IMPORTED_MODULE_4__["default"],
+    CarouselPubblicita: _components_CarouselPubblicita__WEBPACK_IMPORTED_MODULE_6__["default"],
+    ProductsCarousel: _components_ProductsCarousel__WEBPACK_IMPORTED_MODULE_5__["default"],
     Categories: _components_Categories__WEBPACK_IMPORTED_MODULE_2__["default"],
-    Footer: _components_Footer__WEBPACK_IMPORTED_MODULE_3__["default"]
+    Footer: _components_Footer__WEBPACK_IMPORTED_MODULE_4__["default"]
   },
   data: function data() {
     return {
@@ -2311,6 +2646,25 @@ __webpack_require__.r(__webpack_exports__);
     }
   }
 });
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Footer.vue?vue&type=style&index=0&style=scoped&lang=scss&":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Footer.vue?vue&type=style&index=0&style=scoped&lang=scss& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".footer-social {\n  display: flex;\n  background: #1b3d79;\n  color: #fff;\n}\n.footer-social .social-images {\n  font-size: 2rem;\n}\n.footer-infos ul {\n  list-style: none;\n}\n.footer-infos ul li h4 {\n  color: #2b4b83;\n}\n.footer-infos ul li a {\n  text-decoration: none;\n  color: black;\n  font-size: 0.8rem;\n}\n.footer-infos ul .links {\n  display: block !important;\n}\n.footer-infos .footer-customer .border-customer {\n  border: 2px solid #d3e3f5;\n  border-radius: 8px;\n}\n.footer-infos .footer-customer .call-us .call-us-image {\n  background: #d3e3f5;\n}\n.footer-infos .footer-customer .call-us .call-us-number-text {\n  color: #979797;\n}\n.footer-infos .footer-customer .call-us .call-us-number {\n  color: #0970e6;\n}\n.payments .payments-text {\n  color: #0970e6;\n}\n.payments .payments-image i {\n  font-size: 2rem;\n  padding: 0.5rem;\n  background: #fff;\n}\n.sub-footer {\n  color: #979797;\n  background: #f7f7f7;\n  padding: 1rem;\n}", ""]);
+
+// exports
+
 
 /***/ }),
 
@@ -2402,7 +2756,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n* {\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\tbox-sizing: border-box;\n}\nbody {\r\nbackground-color: #f7f7f7;\r\nfont-family: sans-serif;\n}\r\n", ""]);
+exports.push([module.i, "\n* {\n\tmargin: 0;\n\tpadding: 0;\n\tbox-sizing: border-box;\n}\nbody {\nbackground-color: #f7f7f7;\nfont-family: sans-serif;\n}\n", ""]);
 
 // exports
 
@@ -2886,6 +3240,36 @@ process.umask = function() { return 0; };
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js"), __webpack_require__(/*! ./../process/browser.js */ "./node_modules/process/browser.js")))
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Footer.vue?vue&type=style&index=0&style=scoped&lang=scss&":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Footer.vue?vue&type=style&index=0&style=scoped&lang=scss& ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../../node_modules/vue-loader/lib??vue-loader-options!./Footer.vue?vue&type=style&index=0&style=scoped&lang=scss& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Footer.vue?vue&type=style&index=0&style=scoped&lang=scss&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
 
 /***/ }),
 
@@ -3623,6 +4007,30 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CarouselPubblicita.vue?vue&type=template&id=8cdbdb80&":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CarouselPubblicita.vue?vue&type=template&id=8cdbdb80& ***!
+  \*********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("section", [_vm._v("\n    test\n")])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Categories.vue?vue&type=template&id=8ceef672&":
 /*!*************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Categories.vue?vue&type=template&id=8ceef672& ***!
@@ -3662,9 +4070,261 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div")
+  return _c("footer", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "footer-infos p-5" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("nav", { staticClass: "col-12 col-lg-7 px-4" }, [
+          _c(
+            "div",
+            { staticClass: "row" },
+            _vm._l(_vm.cols, function (i) {
+              return _c(
+                "div",
+                { key: "col-" + i, staticClass: "col-12 col-lg-4" },
+                _vm._l(_vm.navLinksMethod(i), function (navLink, index) {
+                  return _c(
+                    "ul",
+                    {
+                      key: "navLink-" + index,
+                      on: {
+                        click: function ($event) {
+                          return _vm.showLinks(index, i)
+                        },
+                      },
+                    },
+                    [
+                      _c(
+                        "li",
+                        { staticClass: "d-flex justify-content-between" },
+                        [
+                          _c("h4", [_vm._v(_vm._s(navLink.title))]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "d-lg-none me-5" }, [
+                            _c(
+                              "h4",
+                              {
+                                staticClass: "d-none",
+                                class: { links: !navLink.show },
+                              },
+                              [_vm._v("+")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "h4",
+                              {
+                                staticClass: "d-none",
+                                class: { links: navLink.show },
+                              },
+                              [_vm._v("-")]
+                            ),
+                          ]),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _vm._l(navLink.links, function (link, index) {
+                        return _c(
+                          "li",
+                          {
+                            key: "link-" + index,
+                            staticClass: "d-none d-lg-block",
+                            class: { links: navLink.show },
+                          },
+                          [
+                            _c("a", { attrs: { href: link.url } }, [
+                              _vm._v(_vm._s(link.text)),
+                            ]),
+                          ]
+                        )
+                      }),
+                    ],
+                    2
+                  )
+                }),
+                0
+              )
+            }),
+            0
+          ),
+        ]),
+        _vm._v(" "),
+        _vm._m(1),
+      ]),
+    ]),
+    _vm._v(" "),
+    _c("hr"),
+    _vm._v(" "),
+    _vm._m(2),
+    _vm._v(" "),
+    _vm._m(3),
+  ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "footer-social justify-content-between justify-content-lg-end align-items-center",
+      },
+      [
+        _c("div", { staticClass: "social-text p-3" }, [
+          _vm._v("\n            #restaconnesso\n        "),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "social-images p-3" }, [
+          _c("i", { staticClass: "fab fa-facebook-square" }),
+          _vm._v(" "),
+          _c("i", { staticClass: "fab fa-twitter-square" }),
+          _vm._v(" "),
+          _c("i", { staticClass: "fab fa-instagram-square" }),
+          _vm._v(" "),
+          _c("i", { staticClass: "fab fa-youtube-square" }),
+          _vm._v(" "),
+          _c("i", { staticClass: "fab fa-linkedin" }),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "footer-customer col-12 col-lg-5 p-4" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-12 border-customer mx-3 mb-2" }, [
+          _c("div", { staticClass: "row call-us" }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "col-6 d-flex justify-content-center align-items-center call-us-image",
+              },
+              [
+                _c("img", {
+                  attrs: {
+                    alt: "call us",
+                    src: "https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dwd3d279b3/call-us.png",
+                  },
+                }),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "col-6 d-flex flex-column justify-content-center align-items-center",
+              },
+              [
+                _c("div", { staticClass: "text-uppercase" }, [
+                  _vm._v("Chiamaci"),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "call-us-number-text" }, [
+                  _vm._v("al numero verde"),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "call-us-number" }, [
+                  _vm._v("800 650 650"),
+                ]),
+              ]
+            ),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-12 pe-0" }, [
+          _c("div", { staticClass: "row justify-content-between" }, [
+            _c("div", { staticClass: "col-6 pe-0" }, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "border-customer d-flex flex-column justify-content-center align-items-center text-uppercase py-3",
+                },
+                [
+                  _c("img", {
+                    attrs: {
+                      alt: "punti vendita",
+                      src: "https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dw680dbb0b/point-of-service.png",
+                    },
+                  }),
+                  _vm._v(
+                    "\n                                  Trova un \n                                  "
+                  ),
+                  _c("strong", [_vm._v("Punto vendita")]),
+                ]
+              ),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-6 pe-0" }, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "border-customer d-flex flex-column justify-content-center align-items-center text-uppercase pb-4",
+                },
+                [
+                  _c("img", {
+                    attrs: {
+                      alt: "servizio clienti",
+                      src: "https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dw73041029/contact-service.png",
+                    },
+                  }),
+                  _vm._v(
+                    "\n                                  Contatta il \n                                  "
+                  ),
+                  _c("strong", [_vm._v("servizio clienti")]),
+                ]
+              ),
+            ]),
+          ]),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "payments d-flex flex-column justify-content-center align-items-center",
+      },
+      [
+        _c("div", { staticClass: "payments-text" }, [
+          _vm._v("Metodi di pagamento"),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "payments-image d-flex" }, [
+          _c("i", { staticClass: "fab fa-cc-visa" }),
+          _vm._v(" "),
+          _c("i", { staticClass: "fab fa-cc-mastercard" }),
+          _vm._v(" "),
+          _c("i", { staticClass: "fab fa-cc-amex" }),
+          _vm._v(" "),
+          _c("i", { staticClass: "fab fa-cc-paypal" }),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "sub-footer" }, [
+      _c("div", { staticClass: "text-center" }, [
+        _vm._v("© 2022 Carrefour.it – P.IVA N. 12683790153"),
+      ]),
+    ])
+  },
+]
 render._withStripped = true
 
 
@@ -4075,6 +4735,8 @@ var render = function () {
       _c("Header"),
       _vm._v(" "),
       _c("Categories"),
+      _vm._v(" "),
+      _c("CarouselPubblicita"),
       _vm._v(" "),
       _c(
         "main",
@@ -16272,6 +16934,75 @@ module.exports = g;
 
 /***/ }),
 
+/***/ "./resources/js/components/CarouselPubblicita.vue":
+/*!********************************************************!*\
+  !*** ./resources/js/components/CarouselPubblicita.vue ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CarouselPubblicita_vue_vue_type_template_id_8cdbdb80___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CarouselPubblicita.vue?vue&type=template&id=8cdbdb80& */ "./resources/js/components/CarouselPubblicita.vue?vue&type=template&id=8cdbdb80&");
+/* harmony import */ var _CarouselPubblicita_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CarouselPubblicita.vue?vue&type=script&lang=js& */ "./resources/js/components/CarouselPubblicita.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _CarouselPubblicita_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _CarouselPubblicita_vue_vue_type_template_id_8cdbdb80___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _CarouselPubblicita_vue_vue_type_template_id_8cdbdb80___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/CarouselPubblicita.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/CarouselPubblicita.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/CarouselPubblicita.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CarouselPubblicita_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./CarouselPubblicita.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CarouselPubblicita.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CarouselPubblicita_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/CarouselPubblicita.vue?vue&type=template&id=8cdbdb80&":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/components/CarouselPubblicita.vue?vue&type=template&id=8cdbdb80& ***!
+  \***************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CarouselPubblicita_vue_vue_type_template_id_8cdbdb80___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./CarouselPubblicita.vue?vue&type=template&id=8cdbdb80& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CarouselPubblicita.vue?vue&type=template&id=8cdbdb80&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CarouselPubblicita_vue_vue_type_template_id_8cdbdb80___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CarouselPubblicita_vue_vue_type_template_id_8cdbdb80___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/Categories.vue":
 /*!************************************************!*\
   !*** ./resources/js/components/Categories.vue ***!
@@ -16352,7 +17083,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Footer_vue_vue_type_template_id_61a7c374___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Footer.vue?vue&type=template&id=61a7c374& */ "./resources/js/components/Footer.vue?vue&type=template&id=61a7c374&");
 /* harmony import */ var _Footer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Footer.vue?vue&type=script&lang=js& */ "./resources/js/components/Footer.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _Footer_vue_vue_type_style_index_0_style_scoped_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Footer.vue?vue&type=style&index=0&style=scoped&lang=scss& */ "./resources/js/components/Footer.vue?vue&type=style&index=0&style=scoped&lang=scss&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -16360,7 +17093,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _Footer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _Footer_vue_vue_type_template_id_61a7c374___WEBPACK_IMPORTED_MODULE_0__["render"],
   _Footer_vue_vue_type_template_id_61a7c374___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -16389,6 +17122,22 @@ component.options.__file = "resources/js/components/Footer.vue"
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Footer.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Footer.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Footer.vue?vue&type=style&index=0&style=scoped&lang=scss&":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/components/Footer.vue?vue&type=style&index=0&style=scoped&lang=scss& ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_style_index_0_style_scoped_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../../node_modules/vue-loader/lib??vue-loader-options!./Footer.vue?vue&type=style&index=0&style=scoped&lang=scss& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Footer.vue?vue&type=style&index=0&style=scoped&lang=scss&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_style_index_0_style_scoped_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_style_index_0_style_scoped_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_style_index_0_style_scoped_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_style_index_0_style_scoped_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
 
 /***/ }),
 
@@ -16483,15 +17232,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!*************************************************!*\
   !*** ./resources/js/components/ProductCard.vue ***!
   \*************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ProductCard_vue_vue_type_template_id_1a457ff8_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ProductCard.vue?vue&type=template&id=1a457ff8&scoped=true& */ "./resources/js/components/ProductCard.vue?vue&type=template&id=1a457ff8&scoped=true&");
 /* harmony import */ var _ProductCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ProductCard.vue?vue&type=script&lang=js& */ "./resources/js/components/ProductCard.vue?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _ProductCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _ProductCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _ProductCard_vue_vue_type_style_index_0_id_1a457ff8_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ProductCard.vue?vue&type=style&index=0&id=1a457ff8&lang=scss&scoped=true& */ "./resources/js/components/ProductCard.vue?vue&type=style&index=0&id=1a457ff8&lang=scss&scoped=true&");
+/* empty/unused harmony star reexport *//* harmony import */ var _ProductCard_vue_vue_type_style_index_0_id_1a457ff8_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ProductCard.vue?vue&type=style&index=0&id=1a457ff8&lang=scss&scoped=true& */ "./resources/js/components/ProductCard.vue?vue&type=style&index=0&id=1a457ff8&lang=scss&scoped=true&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -16523,7 +17271,7 @@ component.options.__file = "resources/js/components/ProductCard.vue"
 /*!**************************************************************************!*\
   !*** ./resources/js/components/ProductCard.vue?vue&type=script&lang=js& ***!
   \**************************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16945,7 +17693,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\misia\OneDrive\Desktop\carrefour-project\resources\js\front.js */"./resources/js/front.js");
+module.exports = __webpack_require__(/*! /Users/giulioincarbone/Desktop/Boolean/carrefour-project/resources/js/front.js */"./resources/js/front.js");
 
 
 /***/ })
