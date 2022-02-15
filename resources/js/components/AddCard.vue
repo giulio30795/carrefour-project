@@ -16,6 +16,7 @@
 <style lang="scss" scoped>
 	.add_card {
 		width: calc((100% - 60px) / 4);
+		height:100px;
 		margin-inline: 5px;
 		margin-bottom: 10px;
 		padding: 10px;
