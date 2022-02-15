@@ -3,9 +3,16 @@
 
 
 	<Header />
+
+	
+	
+
+
 	<!-- <Main /> -->
 	<main>
+    
 		<Categories :categories="categories"/>
+    <CarouselPubblicita />
 		<ProductsCarousel :products="products"/>
 		<AddsCarousel :adds="adds"/>
 	</main>
@@ -19,8 +26,9 @@
 <script>
 import axios from 'axios';
 import Header from '../components/Header';
-// import Main from '../components/Main';
 import Categories from '../components/Categories';
+// import Main from '../components/Main';
+import CarouselPubblicita from '../components/CarouselPubblicita';
 import Footer from '../components/Footer';
 import ProductsCarousel from '../components/ProductsCarousel';
 import AddsCarousel from '../components/AddsCarousel';
@@ -30,6 +38,7 @@ export default {
 	components: {
 		AddsCarousel,
 		Header,
+		CarouselPubblicita,
 		ProductsCarousel,
 		Categories,
 		Footer,
