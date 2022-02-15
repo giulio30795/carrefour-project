@@ -4,8 +4,8 @@
 
         <div class="scroll_container">
 
-            <ul class="ContainerForCategory slides">
-                <li v-for="(category, i) in categories" :key="`product_${i}`">
+            <ul class="ContainerForCategory categorySlides">
+                <li v-for="(category, i) in categories" :key="`category_${i}`">
 
                     <CardForCategories 
                     :icon="category.icon"
@@ -41,7 +41,7 @@ export default {
     data() {
         return {
             carouselScroll: 0,
-            carousel: document.querySelector('.slides'),
+            carousel: document.querySelector('.categorySlides'),
         }
     },
     created() {
@@ -50,7 +50,7 @@ export default {
     methods: {
 
         carouselScrollTo(quantity) {
-            let carousel = document.querySelector('.slides');
+            let carousel = document.querySelector('.categorySlides');
             let scrolled = carousel.scrollLeft;
 
             if (quantity < 0 && scrolled + (quantity) < 0) {
@@ -116,5 +116,19 @@ export default {
     li{
         list-style: none;
     }
+}
+
+.categorySlides {
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: stretch;
+		overflow-x: auto;
+		// hiding scrollbars
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+		// //hiding scrollbars
+		&::-webkit-scrollbar {
+			display: none;
+		}
 }
 </style>

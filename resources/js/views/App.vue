@@ -53,7 +53,7 @@ export default {
 	created() {
 		this.getCategories();
 		this.fetchProducts();
-    this.fetchBanners();
+    	this.fetchBanners();
 	},
 	methods: {
 		fetchProducts() {

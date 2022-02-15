@@ -28,7 +28,7 @@ export default {
 	data() {
 		return {
 			carouselScroll: 0,
-			carousel: document.querySelector('.slides'),
+			carousel: document.querySelector('.addslides'),
 			
 		}
 	},
