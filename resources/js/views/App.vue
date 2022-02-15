@@ -7,6 +7,7 @@
 	<!-- <Main /> -->
 	<main>
 		<ProductsCarousel :products="products"/>
+		<AddsCarousel :adds="adds"/>
 	</main>
 	<Footer />
 
@@ -22,11 +23,12 @@ import Header from '../components/Header';
 import Categories from '../components/Categories';
 import Footer from '../components/Footer';
 import ProductsCarousel from '../components/ProductsCarousel';
-
+import AddsCarousel from '../components/AddsCarousel';
 export default {
 
 	name: 'App',
 	components: {
+		AddsCarousel,
 		Header,
 		ProductsCarousel,
 		Categories,
@@ -35,6 +37,7 @@ export default {
 	data() {
 		return {
 			products: null,
+			adds:null,
 		}
 	},
 	created() {
@@ -46,6 +49,16 @@ export default {
 			.then(response => {
 				console.log(response);
 				this.products = response.data;
+			})
+			.catch(err => {
+				console.log(err);
+			});
+		},
+		fetchProducts() {
+			axios.get('http://127.0.0.1:8000/api/banners')
+			.then(response => {
+				console.log(response);
+				this.adds = response.data;
 			})
 			.catch(err => {
 				console.log(err);
