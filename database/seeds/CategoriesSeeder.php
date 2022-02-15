@@ -15,7 +15,8 @@ class CategoriesSeeder extends Seeder
         $categories = config('categories');
         foreach ($categories as $category) {
             $new_category = new Category();
-            $new_category->name = $category;
+            $new_category->name = $category[0];
+            $new_category->icon = $category[1];
             $new_category->save();
         }
     }
