@@ -1,18 +1,13 @@
 <template>
 <div>
 
-
 	<Header />
-
-	
-	
-
 
 	<!-- <Main /> -->
 	<main>
     
 		<Categories :categories="categories"/>
-    <CarouselPubblicita />
+    	<CarouselPubblicita />
 		<ProductsCarousel :products="products"/>
 		<AddsCarousel :adds="adds"/>
 	</main>
