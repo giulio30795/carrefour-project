@@ -7,11 +7,11 @@
               #restaconnesso
           </div>
           <div class="social-images p-3">
-              <i class="fab fa-facebook-square"></i>
-              <i class="fab fa-twitter-square"></i>
-              <i class="fab fa-instagram-square"></i>
-              <i class="fab fa-youtube-square"></i>
-              <i class="fab fa-linkedin"></i>
+              <i class="fab fa-facebook-square cursor-pointer"></i>
+              <i class="fab fa-twitter-square cursor-pointer"></i>
+              <i class="fab fa-instagram-square cursor-pointer"></i>
+              <i class="fab fa-youtube-square cursor-pointer"></i>
+              <i class="fab fa-linkedin cursor-pointer"></i>
           </div>
       </div>
 
@@ -22,8 +22,8 @@
                     <div v-for="i in cols" :key="`col-${i}`" class="col-12 col-lg-4">
                         <ul v-for="(navLink, index) in navLinksMethod(i)" :key="`navLink-${index}`" @click="showLinks(index, i)">
                             <li class="d-flex justify-content-between">
-                                <h4>{{ navLink.title }}</h4>
-                                <div class="d-lg-none me-5">
+                                <h4 class="cursor-pointer">{{ navLink.title }}</h4>
+                                <div class="d-lg-none me-5 cursor-pointer">
                                     <h4 class="d-none" :class="{links: !navLink.show}">+</h4>
                                     <h4 class="d-none" :class="{links: navLink.show}">-</h4>
                                 </div>
@@ -39,10 +39,10 @@
                 <div class="row">
                     <div class="col-12 border-customer mx-3 mb-2">
                         <div class="row call-us">
-                            <div class="col-6 d-flex justify-content-center align-items-center call-us-image">
+                            <div class="col-6 d-flex justify-content-center align-items-center call-us-image cursor-pointer">
                                 <img alt="call us" src="https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dwd3d279b3/call-us.png">
                             </div>
-                            <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+                            <div class="col-6 d-flex flex-column justify-content-center align-items-center cursor-pointer">
                                 <div class="text-uppercase">Chiamaci</div>
                                 <div class="call-us-number-text">al numero verde</div>
                                 <div class="call-us-number">800 650 650</div>
@@ -50,7 +50,7 @@
                         </div>
                     </div>
                     <div class="col-12 pe-0">
-                        <div class="row justify-content-between">
+                        <div class="row justify-content-between cursor-pointer">
                             <div class="col-6 pe-0">
                                 <div class="border-customer d-flex flex-column justify-content-center align-items-center text-uppercase py-3">
                                     <img alt="punti vendita" src="https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dw680dbb0b/point-of-service.png">
@@ -59,7 +59,7 @@
                                 </div>
                             </div>
                             <div class="col-6 pe-0">
-                                <div class="border-customer d-flex flex-column justify-content-center align-items-center text-uppercase pb-4">
+                                <div class="border-customer d-flex flex-column justify-content-center align-items-center text-uppercase pb-4 cursor-pointer">
                                     <img alt="servizio clienti" src="https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dw73041029/contact-service.png">
                                     Contatta il 
                                     <strong>servizio clienti</strong>
@@ -77,10 +77,10 @@
       <div class="payments d-flex flex-column justify-content-center align-items-center">
         <div class="payments-text">Metodi di pagamento</div>
         <div class="payments-image d-flex">
-            <i class="fab fa-cc-visa"></i>
-            <i class="fab fa-cc-mastercard"></i>
-            <i class="fab fa-cc-amex"></i>
-            <i class="fab fa-cc-paypal"></i>
+            <i class="fab fa-cc-visa cursor-pointer"></i>
+            <i class="fab fa-cc-mastercard cursor-pointer"></i>
+            <i class="fab fa-cc-amex cursor-pointer"></i>
+            <i class="fab fa-cc-paypal cursor-pointer"></i>
         </div>
       </div>
 
@@ -449,6 +449,10 @@ export default {
         color: #979797;
         background: #f7f7f7;
         padding: 1rem;
+    }
+
+    .cursor-pointer {
+        cursor: pointer;
     }
 
     
