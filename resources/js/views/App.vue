@@ -10,9 +10,9 @@
 
 	<!-- <Main /> -->
 	<main>
-    
+
 		<Categories :categories="categories"/>
-    <CarouselPubblicita />
+		<CarouselPubblicita />
 		<ProductsCarousel :products="products"/>
 		<AddsCarousel :adds="adds"/>
 	</main>
@@ -103,6 +103,7 @@ export default {
 body {
 	background-color: $clear-300;
 	font-family: sans-serif;
+	overflow-x: hidden;
 }
 
 </style>

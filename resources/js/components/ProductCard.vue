@@ -12,14 +12,10 @@
 		</div>
 		<figure class="cover">
 			<img class="cover_image" :src="cover" alt="">
-			<!-- TODO vogliamo mettere le iconcine di categoria/altro o lasciamo vuoto? -->
-			<!-- <img src="" alt=""> -->
 		</figure>
 		<div class="bottom_details">
 			<div class="offer_details">
-				<div class="discount_badge badge badge-danger"></div>
-				<!-- non abbiamo più il campo per la data di scadenza dell'offerta quindi se non vogliamo implementarla possiamo semplicemente ignorare questo campo, in quel caso questo div non lo metto più dentro il wrapper .offer_details -->
-				<!-- <div class="expiring_date"></div> -->
+				<div v-if="discount > 0" class="discount_badge badge badge-danger">{{discount}}</div>
 			</div>
 			<div class="stock_price">
 				{{stockPrice(fixedPrice)}}
@@ -60,44 +56,48 @@
 </script>
 
 <style lang="scss" scoped>
+@import '../../sass/app.scss';
 
-.text-danger {
-	color: red;
-}
-
-.offer_badge {
-	font-size: .9rem;
-}
 	.product_card {
-		width: calc((100% - 60px) / 6);
-		height: 380px;
-		margin-inline: 5px;
-		margin-bottom: 10px;
+		width: clamp(calc((100% - 60px) / 6),
+		240px, 300px);
+		margin: 0 .5rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		padding: 10px;
-		background-color: white;
-		list-style-type: none;
+		background-color: $clear-100;
 		flex-shrink: 0;
 		border-radius: 5px;
-		border: 1px solid rgba(lightgray, .5);
+		border: 1px solid rgba($dark-900, .09);
 		.top_info {
 			display: flex;
 			justify-content: space-between;
+			align-items: center;
+			.offer_badge {
+				font-size: .70rem;
+				font-weight: bold;
+			}
 			.fav {
 				margin-left: auto;
+				color: $enabled;
+				cursor: pointer;
 			}
 		}
 		.top_details {
 			.brand {
-				font-size: 1rem;
+				font-size: .85rem;
 				font-weight: bold;
-				margin-bottom: .5rem;
+				margin-bottom: .4rem;
+				color: $primary-400;
+			}
+			.product_name {
+				color: $primary-400;
+				font-size: .85rem;
 			}
 		}
 		.cover {
-			height: 50%;
+			height: 110px;
 			.cover_image {
 				height: 100%;
 				width: 100%;
@@ -115,6 +115,7 @@
 			.detail_price {
 				font-size: 1.15rem;
 				font-weight: bold;
+				color: $primary-400;
 			}
 		}
 		.add_to_cart {
@@ -124,7 +125,7 @@
 			color: white;
 			border-radius: 100px;
 			padding: .3rem 1.2rem;
-			background-color: red;
+			background-color: $enabled;
 		}
 	}
 </style>
