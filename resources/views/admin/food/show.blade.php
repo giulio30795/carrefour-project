@@ -23,6 +23,27 @@
 					<p class="brand">Stock: {{$food->stock}}</p>
 					<p class="brand">{{$food->description}}</p>
 					<p class="price">Price: {{$food->price}}€</p>
+
+					<h4>Categories</h4>
+					<ul>
+						@foreach($food->categories as $category)
+							<li>{{$category->name}}</li>
+						@endforeach
+					</ul>
+					
+					@if(!$food->allergens->isEmpty())
+						<h4>Allergens</h4>
+						<ul>
+							@foreach($food->allergens as $allergen)
+							<li>{{$allergen->name}}</li>
+							@endforeach
+						</ul>
+					@else
+						<p>No Allergens</p>
+					@endif
+					
+
+			
 					{{-- TODO - appena creiamo la tabella finisco la vista così ho una reference esatta dei dati a disposizione --}}
 
 					<div class="d-flex">
