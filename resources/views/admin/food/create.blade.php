@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('content')
-    <div class="w-50 mx-auto create_crud">
+    <div class="w-50 mx-auto create_crud mb-5">
+        <h1 class="mb-2">Add Product</h1>
         <form action="{{ route('admin.food.store') }}" method="POST">
             @csrf
 
