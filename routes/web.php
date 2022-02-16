@@ -36,12 +36,5 @@ Route::get('{any?}', function(){
 	return view('guest.home');
 })->where('any', '.*');
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 // FIXME le rotet sono incasinate, ho provato a sistemarle ma poi cambia il funzionamento dei link, per ora ho ripristinato ma così non va bene xD
