@@ -69,7 +69,6 @@ export default {
                     behavior: 'smooth',
                 });
             }
-            console.log(this.$refs.productsSlide);
         },
         
     }

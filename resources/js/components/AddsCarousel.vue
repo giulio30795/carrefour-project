@@ -60,7 +60,6 @@ export default {
 					behavior: 'smooth',
 				});
 			}
-			console.log(this.$refs.addsSlide);
 		},
 	},
 	// TODO - computed da usare per una classe dinamica disabled sui tasti per lo scroll

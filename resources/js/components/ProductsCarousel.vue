@@ -46,24 +46,23 @@ export default {
 		carouselScrollTo(quantity) {
 			let carousel = document.querySelector('.slides');
 			let scrolled = carousel.scrollLeft;
+				carousel.scroll({
+					behavior: 'smooth',
+				});
 
 			if (quantity < 0 && scrolled + (quantity) < 0) {
 				carousel.scroll({
 					left: 0,
-					behavior: 'smooth',
 				});
 			} else if (quantity > 0 && + scrolled + (quantity) > carousel.scrollLeftMax) {
 				carousel.scroll({
 					left: carousel.scrollLeftMax,
-					behavior: 'smooth',
 				});
 			} else {
 				carousel.scroll({
 					left: scrolled + (quantity),
-					behavior: 'smooth',
 				});
 			}
-			console.log(this.$refs.productsSlide);
 		},
 	},
 	// TODO - computed da usare per una classe dinamica disabled sui tasti per lo scroll
