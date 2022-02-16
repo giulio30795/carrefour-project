@@ -5,34 +5,34 @@
         <!--OVER IT-->
 
         <div class="up">
-            <span>
-                <a href="">
+            <div>
+                <a class="brand" href="">
                     <img src="https://www.carrefour.it/on/demandware.static/Sites-carrefour-IT-Site/-/default/dwf3c21fa0/images/carrefour-logotype.svg" alt="">
                     <img src="https://www.carrefour.it/on/demandware.static/Sites-carrefour-IT-Site/-/default/dw44a8db04/images/carrefour-logomark.svg" alt="">
                 </a>
-            </span>
+            </div>
             
             <form action="" class="form">
                 <input type="text" class="form" name="" id="" value="" placeholder="Di cosa hai bisogno?">
-                <div>
-                    <a href="" class="text-white" >
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
+                <div class="icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </form>
             
-            <div class="payback" >
-                <img src="https://www.carrefour.it/on/demandware.static/Sites-carrefour-IT-Site/-/default/dw977fdad2/images/payback-ball.png" alt="">
-                <a href="" class="pay text-center">
-                    <div class="top">PAYBACK</div>
-                    <div class="bot"><strong>Scopri Payback</strong></div>
-                </a>
-            </div>
+            <div class="right">
+                <div class="payback" >
+                    <img src="https://www.carrefour.it/on/demandware.static/Sites-carrefour-IT-Site/-/default/dw977fdad2/images/payback-ball.png" alt="">
+                    <a href="" class="pay text-center">
+                        <div class="top">PAYBACK</div>
+                        <div class="bot"><strong>Scopri Payback</strong></div>
+                    </a>
+                </div>
 
-            <div>
-                <a href="">
-                    <i class="fa-solid fa-cart-shopping cart"></i>
-                </a>
+                <div>
+                    <a href="">
+                        <i class="fa-solid fa-cart-shopping cart"></i>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -83,48 +83,66 @@ export default {
 <style lang="scss" scoped>
 @import '../../sass/_variables.scss';
 
+.navigation {
+    background-color: $clear-100;
+}
+
 .wrapper {
-    padding-inline: 2.5rem;
+    padding: 1rem 2.5rem;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .up{
-    display: flex;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding-block: 20px;
     background-color: $clear-100;
+    padding: .5rem 0;
+    margin-bottom: 1rem;
+    .form{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        .icon {
+            display: grid;
+            place-content: center;
+            position: absolute;
+            top: 50%;
+            right: .7rem;
+            color: $clear-100;
+            font-size: .8rem;
+            transform: translateY(-50%);
+            background-color: $primary-100;
+            padding: .4rem;
+            aspect-ratio: 1.0;
+            border-radius: 50%;
+        }
+        input {
+            width: 100%;
+            padding: .5rem .7rem;
+            background-color: $clear-300;
+            border: none;
+            border-radius: 100px;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
 
-    .cart{
+    .right {
+        justify-content: flex-end;
+        display: flex;
+        align-items: center;
+        .cart{
         margin: 0 30px;
         font-size: 25px;
-    }
-    
-    .form{
-        width: 750px;
-        height: 40px;
-        border-radius: 25px;
-        border: 1px solid transparent;
-        background-color: $clear-300;
-        margin: 0 auto;
-        position: relative;
-        padding-inline: .6rem;
-        &::placeholder {
-            color: $dark-900;
-        }
-
-        div{
-            width: 30px;
-            height: 30px;
-            line-height: 30px;
-            border-radius: 25px;
-            background-color:#84b7f2;
-            text-align: center;
-            position: absolute;
-            right: 8px;
-            top: 4px;
         }
     }
- 
 }
 
 .down{
