@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container food_edit_container">
-        <h1 class="mb-5">Edit {{ $food->product_name }}</h1>
+    <div class="w-50 mx-auto food_edit_container mb-5">
+        <h1 class="mb-4">Edit Product</h1>
+        <h2 class="mb-4">{{ $food->product_name }}</h2>
 
         <form action="{{ route('admin.food.update', $food->id) }}" method="POST">
             @csrf
