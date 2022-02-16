@@ -4,7 +4,7 @@
 
 		<div class="scroll_container">
 
-			<ul class="ContainerForCategory categorySlides">
+			<ul class="ContainerForCategory">
 				<li v-for="(category, i) in categories" :key="`category_${i}`">
 
 					<CardForCategories 
@@ -41,7 +41,7 @@ export default {
 	data() {
 		return {
 			carouselScroll: 0,
-			carousel: document.querySelector('.categorySlides'),
+			carousel: document.querySelector('.ContainerForCategory'),
 		}
 	},
 	created() {
@@ -50,15 +50,16 @@ export default {
 	methods: {
 
 		carouselScrollTo(quantity) {
-			let carousel = document.querySelector('.categorySlides');
+			let carousel = document.querySelector('.ContainerForCategory');
 			let scrolled = carousel.scrollLeft;
+			console.log(carousel);
 
 			if (quantity < 0 && scrolled + (quantity) < 0) {
 				carousel.scroll({
 					left: 0,
 					behavior: 'smooth',
 				});
-			} else if (quantity > 0 && + scrolled + (quantity) > carousel.scrollLeftMax) {
+			} else if (quantity > 0 && scrolled + (quantity) > carousel.scrollLeftMax) {
 				carousel.scroll({
 					left: carousel.scrollLeftMax,
 					behavior: 'smooth',
@@ -69,7 +70,6 @@ export default {
 					behavior: 'smooth',
 				});
 			}
-			console.log(this.$refs.productsSlide);
 		},
 		
 	}
@@ -78,19 +78,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../sass/_variables.scss';
 
 .scroll_container{
-	padding: 0 20px;
 	position: relative;
+	background-color: $clear-100;
+	padding-inline: 2.5rem;
+	display: flex;
+	justify-content: center;
 }
 
 .prev, .next{
 	position: absolute;
-	background-color: #0970e5;
+	background-color: $primary-200;
 	transform: translateY(-50%);
 	padding: 8px 14px;
 	border-radius: 50%;
 	color: white;
+	cursor: pointer;
 }
 .prev{
 	top: 50%;
@@ -102,20 +107,25 @@ export default {
 }
 
 @media screen and (min-width:1589px) {
-.prev, .next {
-	display: none;
-}
+	.prev, .next {
+		display: none;
+	}
 }
 
 
 .ContainerForCategory{
 	display: flex;
-	justify-content: center;
-	overflow-x: scroll;
+	justify-content: flex-start;
+	scrollbar-width: none;
+	background-color: $clear-100;
+	max-width: 90%;
+	flex-wrap: nowrap;
+	align-items: center;
+	overflow-x: auto;
+	// hiding scrollbars;
 	-ms-overflow-style: none;
 	scrollbar-width: none;
-	box-shadow: inset 50px 2px 50px -6px white;
-
+	//hiding scrollbars
 	&::-webkit-scrollbar {
 		display: none;
 	}
@@ -123,19 +133,5 @@ export default {
 	li{
 		list-style: none;
 	}
-}
-
-.categorySlides {
-		display: flex;
-		flex-wrap: nowrap;
-		align-items: stretch;
-		overflow-x: auto;
-		// hiding scrollbars
-		-ms-overflow-style: none;
-		scrollbar-width: none;
-		// //hiding scrollbars
-		&::-webkit-scrollbar {
-			display: none;
-		}
 }
 </style>

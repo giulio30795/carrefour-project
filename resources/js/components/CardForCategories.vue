@@ -30,10 +30,10 @@ export default {
 
 .categories{
 	width: 100px;
-	height: 100px;
+	aspect-ratio: 1;
 	border-radius: 10px;
-	background-color: white;
-	box-shadow: 6px 8px 50px -20px rgba(0,0,0,0.30);
+	background-color: $clear-100;
+	box-shadow: 0 0 20px rgba($dark-900, .08);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -42,17 +42,18 @@ export default {
 	transition: all .2s ease-in-out;
 	color: $disabled-text;
 	&:hover {
-		transform: translateY(-1rem);
+		transform: translateY(-.8rem);
 		color: $enabled;
 	}
 
 	.icon{
-		margin-bottom: 3px;
-		font-size: 26px;
+		margin-bottom: .2rem;
+		font-size: 1.5rem;
 	}
 	.category-name{
-		font-size: 14px;
+		font-size: .8rem;
 		text-align: center;
+		font-weight: bold;
 	}
 }
 

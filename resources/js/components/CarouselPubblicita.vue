@@ -1,5 +1,5 @@
 <template>
-    <section class="container">
+    <!-- <section class="container">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -19,15 +19,40 @@
             </div>
         </div>
 
-    </section>
+    </section> -->
+    <div class="hero_ad_banner">
+        <img :src="slides[activeSlide]" alt="">
+    </div>
 </template>
 
 <script>
 export default {
-    name: 'CarouselPubblicita'
+    name: 'CarouselPubblicita',
+    methods: {
+        slide() {},
+    },
+    data() {
+        return {
+            activeSlide: 0,
+            slides: [
+                'https://www.carrefour.it/on/demandware.static/-/Sites/default/dwe593ac51/banner/main-carousel/food/banner_piccolo/scJohnson/Glade_PromoCard_LoveTheSign_WEB_993x275_B0222.jpg',
+                'https://www.carrefour.it/on/demandware.static/-/Sites/default/dw75186023/banner/main-carousel/food/banner_piccolo/danome-actimel/E_CRF_ACTIMEL_FEB_HP_Desktop_993x275px.jpg',
+                'https://www.carrefour.it/on/demandware.static/-/Sites/default/dwff7e212c/banner/main-carousel/food/banner_piccolo/risparmio-di-qualita/Bannerpiccolo_des_02.jpg',
+            ],
+        }
+    },
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import '../../sass/app.scss';
+
+.hero_ad_banner {
+    height: 220px;
+    img {
+        object-fit: cover;
+        object-position: center;
+    }
+}
 
 </style>
