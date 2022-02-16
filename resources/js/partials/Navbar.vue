@@ -1,7 +1,8 @@
 <template>
-    <div class="navbar" >
+    <div class="navigation">
 
-    <!--OVER IT-->
+    <div class="wrapper">
+        <!--OVER IT-->
 
         <div class="up">
             <span>
@@ -69,6 +70,7 @@
             </div>
         </div>
     </div>
+    </div>
 </template>
 
 <script>
@@ -79,13 +81,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../sass/_variables.scss';
 
+.wrapper {
+    padding-inline: 2.5rem;
+}
 
 .up{
     display: flex;
     width: 100%;
     align-items: center;
-    padding: 20px;
+    padding-block: 20px;
+    background-color: $clear-100;
 
     .cart{
         margin: 0 30px;
@@ -95,12 +102,15 @@ export default {
     .form{
         width: 750px;
         height: 40px;
-        color: #d5d5d5;
         border-radius: 25px;
-        border: 1px solid #f7f7f7 ;
-        background-color: #f7f7f7;
+        border: 1px solid transparent;
+        background-color: $clear-300;
         margin: 0 auto;
         position: relative;
+        padding-inline: .6rem;
+        &::placeholder {
+            color: $dark-900;
+        }
 
         div{
             width: 30px;
@@ -121,7 +131,7 @@ export default {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    background-color: $clear-100;
     ul{
         display: flex;
         list-style: none;

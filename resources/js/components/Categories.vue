@@ -30,7 +30,7 @@
 import CardForCategories from "./CardForCategories"
 
 export default {
-	name:  'Categories',
+	name: 'Categories',
 	components: {
 
 		CardForCategories,
