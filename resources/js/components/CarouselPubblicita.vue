@@ -21,15 +21,26 @@
 
     </section> -->
     <div class="hero_ad_banner">
-        <img :src="slides[activeSlide]" alt="">
+        <img :src="slides[activeSlide]" alt="" >
     </div>
 </template>
 
 <script>
 export default {
     name: 'CarouselPubblicita',
+    created() {
+        this.autoSlide();
+    },
     methods: {
-        slide() {},
+        autoSlide() {
+            setInterval(() => {
+                if(this.activeSlide < this.slides.length - 1) {
+                this.activeSlide++;
+            } else if (this.activeSlide == this.slides.length - 1) {
+                this.activeSlide = 0;
+            }
+            } ,5000);
+        },
     },
     data() {
         return {
@@ -48,8 +59,10 @@ export default {
 @import '../../sass/app.scss';
 
 .hero_ad_banner {
-    height: 220px;
+    height: 280px;
     img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         object-position: center;
     }
