@@ -5,6 +5,8 @@ namespace App\Http\Controllers\admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Food;
+use App\Category;
+use App\Allergen;
 
 class FoodController extends Controller
 {
@@ -26,7 +28,9 @@ class FoodController extends Controller
      */
     public function create()
     {
-        return view('admin.food.create');
+        $categories = Category::all();
+        $allergens = Allergen::all();
+        return view('admin.food.create', compact('categories', 'allergens'));
     }
 
     /**
@@ -37,10 +41,17 @@ class FoodController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate($this->validation_rules(), $this->validation_message());
         $data = $request->all();
         $newFood = new Food();
         $newFood->fill($data);
         $newFood->save();
+        if (array_key_exists('allergens', $data)) {
+            $newFood->allergens()->attach($data['allergens']);
+        }
+        if (array_key_exists('categories', $data)) {
+            $newFood->categories()->attach($data['categories']);
+        }
         return redirect()->route('admin.food.show', $newFood->id);
     }
 
@@ -67,12 +78,14 @@ class FoodController extends Controller
     public function edit($id)
     {
         $food = Food::find($id);
+        $categories = Category::all();
+        $allergens = Allergen::all();
 
         if (!$food) {
             abort(404);
         }
 
-        return view('admin.food.edit', compact('food'));
+        return view('admin.food.edit', compact('food', 'categories', 'allergens'));
     }
 
     /**
@@ -94,6 +107,14 @@ class FoodController extends Controller
         $food = Food::find($id);
 
         $food->update($data);
+        if (array_key_exists('allergens', $data)) {
+            $food->allergens()->sync($data['allergens']);
+        } else {
+            $food->allergens()->detach();
+        }
+        if (array_key_exists('categories', $data)) {
+            $food->categories()->sync($data['categories']);
+        }
 
         return redirect()->route('admin.food.show', $food->id);
     }
@@ -122,6 +143,7 @@ class FoodController extends Controller
             'quantity' => 'required',
             'discount' => 'required',
             'description' => 'required',
+            'categories' => 'required',
         ];
     }
 
