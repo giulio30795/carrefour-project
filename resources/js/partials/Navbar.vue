@@ -62,8 +62,25 @@
                     <li>
                         <a href="" class="me-4">Spesa Smart <i class="fa-solid fa-caret-down ms-2 me-2"></i>|</a>
                     </li>
-                    <li>
-                        <a href=""><i class="fa-solid fa-user me-1"></i><strong>Accedi</strong><i class="fa-solid fa-caret-down ms-2"></i></a>
+                    <li class="UserSection">
+
+                        <span class="userText" @click="DropDownUser">
+
+                            <i class="fa-solid fa-user me-1"></i>
+
+                            <strong>Utente</strong>
+
+                            <i class="fa-solid fa-caret-down ms-2 arrow_user" ref="UserArrow"></i>
+                        </span>
+
+                        <div class="dropDown-User"
+                            ref="UserMenu">
+                            
+                            <a href="#">Accedi</a>
+
+                            <a href="#">Registrati</a>
+
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -74,6 +91,17 @@
 <script>
 export default {
     name: 'Navbar',
+    data() {
+        return {
+
+        }
+    },
+    methods: {
+        DropDownUser(){
+            this.$refs.UserMenu.classList.toggle('onUserMenu');
+            this.$refs.UserArrow.classList.toggle('rotate');
+        },
+    },
 
 }
 </script>
@@ -165,6 +193,47 @@ export default {
             font-size: 17px;
         } 
     }
+}
+
+.UserSection{
+    position: relative;
+
+    .userText{
+        cursor: pointer;
+
+
+    }
+
+
+    .dropDown-User{
+        position: absolute;
+        top: 100%;
+        right: 100%;
+        background-color: white;
+        box-shadow: 1px 0px 22px 6px rgba(0,0,0,0.10);
+        z-index: 1;
+        display: none;
+        padding: 10px;
+        border-radius: 10px;
+
+        &.onUserMenu{
+            display: block;
+
+        }
+        
+        a{
+            color: black;
+        }
+
+
+    }
+}
+
+.arrow_user{
+    transition: all 0.15s;
+}
+.arrow_user.rotate{
+    transform: rotate(-180deg)
 }
 
 
