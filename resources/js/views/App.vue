@@ -7,7 +7,9 @@
 	<main>
 		<Categories :categories="categories"/>
 		<CarouselPubblicita />
+		<!-- FIXME - cercare di rimettere il vostro carosello delle pubblicità -->
 		<ProductsCarousel :products="products"/>
+		<!-- FIXME - i bottoni per lo scroll dei due componenti sotto, fanno scrollare il primo carosello, va sistemato il querySelector, perché lui becca solo il primo-->
 		<ProductsCarousel :products="products"/>
 		<ProductsCarousel :products="products"/>
 		<AddsCarousel :adds="adds"/>
