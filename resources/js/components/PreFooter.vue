@@ -84,23 +84,27 @@
             </div>
 
         </div>
-        <div class="row mt-3 px-3 content-asset">
-            <div class="col-6 col-lg-3 d-flex align-items-center py-3">
-                <img class="me-3" alt="" src="https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dw40efc902/ic_GiftCard_small_1.svg">
-                <div class="prefooter-content">GIFT CARD CARREFOUR</div>
+        <div class="row py-3 content-asset">
+            <div class="wrapper d-flex p-0">
+                <div class="asset col-6 col-lg-3 d-flex align-items-center py-3">
+                    <img class="me-3" alt="" src="https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dwa3e49b4c/financialservices.svg">
+                    <div class="prefooter-content">CARTA CARREFOUR FINDOMESTIC</div>
+                </div>
+                <div class="asset col-6 col-lg-3 d-flex align-items-center py-3">
+                    <img class="me-3" alt="" src="https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dw40efc902/ic_GiftCard_small_1.svg">
+                    <div class="prefooter-content">GIFT CARD CARREFOUR</div>
+                </div>
+                <div class="asset col-6 col-lg-3 d-flex align-items-center py-3">
+                    <img class="me-3" alt="" src="https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dwf20ee960/salute.svg" style="width:30px;height:30px;">
+                    <div class="prefooter-content">CARREFOUR SALUTE</div>
+                </div>
+                <div class="asset col-6 col-lg-3 d-flex align-items-center py-3">
+                    <img class="me-3" alt="" src="https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dw77b055e6/distributore.svg">
+                    <div class="prefooter-content">CARREFOUR CARBURANTI</div>
+                </div>
+                
             </div>
-            <div class="col-6 col-lg-3 d-flex align-items-center py-3">
-                <img class="me-3" alt="" src="https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dwf20ee960/salute.svg" style="width:30px;height:30px;">
-                <div class="prefooter-content">CARREFOUR SALUTE</div>
-            </div>
-            <div class="col-6 col-lg-3 d-flex align-items-center py-3">
-                <img class="me-3" alt="" src="https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dw77b055e6/distributore.svg">
-                <div class="prefooter-content">CARREFOUR CARBURANTI</div>
-            </div>
-            <div class="col-6 col-lg-3 d-flex align-items-center py-3">
-                <img class="me-3" alt="" src="https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dwa3e49b4c/financialservices.svg">
-                <div class="prefooter-content">CARTA CARREFOUR FINDOMESTIC</div>
-            </div>
+            
         </div>
     </div>
 </template>
@@ -115,8 +119,12 @@ export default {
 @import '../../sass/app.scss';
 
 .pre-footer {
-    width: 80%;
-    margin: 2rem auto;
+    width: 100%;
+    margin-inline: auto;
+    .pb-5 {
+        width: 80%;
+        margin: 2rem auto;
+    }
 }
 
     .section-title {
@@ -174,7 +182,29 @@ export default {
     }
 
     .content-asset {
-        background: #e6f1fc;
+        background: $clear-500;
+        .wrapper {
+            width: 80%;
+            margin-inline: auto;
+            justify-content: space-between;
+            .asset {
+                width: calc(100% / 4);
+                justify-content: center;
+                transition: all .3s ease;
+                cursor: pointer;
+                &:hover {
+                    transform: translateY(-3px);
+                }
+                img {
+                    height: 90%;
+                }
+                .prefooter-content {
+                font-weight: 600;
+                color: $primary-400;
+                font-size: .9rem;
+                }
+            }
+        }
     }
 
 </style>
