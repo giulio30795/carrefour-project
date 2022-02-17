@@ -1,16 +1,10 @@
 <template>
 <div>
 
-
 	<Header />
-
-	
-	
-
 
 	<!-- <Main /> -->
 	<main>
-
 		<Categories :categories="categories"/>
 		<CarouselPubblicita />
 		<ProductsCarousel :products="products"/>

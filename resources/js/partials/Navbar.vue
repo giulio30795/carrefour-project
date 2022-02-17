@@ -1,116 +1,94 @@
 <template>
     <div class="navigation">
 
-    <div class="wrapper">
-        <!--OVER IT-->
+			<div class="wrapper">
+					<!--OVER IT-->
 
-        <div class="up">
-            <div>
-                <a class="brand" href="">
-                    <img src="https://www.carrefour.it/on/demandware.static/Sites-carrefour-IT-Site/-/default/dwf3c21fa0/images/carrefour-logotype.svg" alt="">
-                    <img src="https://www.carrefour.it/on/demandware.static/Sites-carrefour-IT-Site/-/default/dw44a8db04/images/carrefour-logomark.svg" alt="">
-                </a>
-            </div>
-            
-            <form action="" class="form">
-                <input type="text" class="form" name="" id="" value="" placeholder="Di cosa hai bisogno?">
-                <div class="icon">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            </form>
-            
-            <div class="right">
-                <a class="payback" >
-                    <img src="https://www.carrefour.it/on/demandware.static/Sites-carrefour-IT-Site/-/default/dw977fdad2/images/payback-ball.png" alt="">
-                    <a href="" class="pay">
-                        <div class="top">PAYBACK</div>
-                        <div class="bot"><strong>Scopri Payback</strong></div>
-                    </a>
-                </a>
+					<div class="up">
+							<div>
+									<a class="brand" href="">
+											<img src="https://www.carrefour.it/on/demandware.static/Sites-carrefour-IT-Site/-/default/dwf3c21fa0/images/carrefour-logotype.svg" alt="">
+											<img src="https://www.carrefour.it/on/demandware.static/Sites-carrefour-IT-Site/-/default/dw44a8db04/images/carrefour-logomark.svg" alt="">
+									</a>
+							</div>
 
-                <div>
-                    <a href="">
-                        <i class="fa-solid fa-cart-shopping cart"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
+							<form action="" class="form">
+									<input type="text" class="form" name="" id="" value="" placeholder="Di cosa hai bisogno?">
+									<div class="icon">
+											<i class="fa-solid fa-magnifying-glass"></i>
+									</div>
+							</form>
 
-    <!--UNDER-->
+							<div class="right">
+									<a class="payback" >
+											<img src="https://www.carrefour.it/on/demandware.static/Sites-carrefour-IT-Site/-/default/dw977fdad2/images/payback-ball.png" alt="">
+											<div class="top">PAYBACK</div>
+											<div class="bot"><strong>Scopri Payback</strong></div>
+									</a>
 
-        <div class="down">
-            <ul class="left">
-                <li>
-                    <a href="">Spesa Online</a>
-                </li>
-                <li>
-                    <a href="">Elettronica e Giocattoli</a>
-                </li>
-                <li>
-                    <a href="">Promozioni
-                        <i class="fa-solid fa-caret-down "></i>
-                    </a>
-                    
-                </li>
-            </ul>
-            <ul class="right">
-                <li>
-                    <a class="grey" href="">Spesa online</a>
-                </li>
-                <li>
-                    <a class="grey" href="">Elettronica e giocattoli</a>
-                </li>
-                <li>
-                    <a href="">Spesa Smart
-                        <i class="fa-solid fa-caret-down"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="fa-solid fa-user me-1"></i>
-                        <strong>Accedi</strong>
-                        <i class="fa-solid fa-caret-down ms-2"></i>
-                    </a>
-                </li>
-            </ul>
-            <!-- <div class="nav" >
-                <ul class="ps-0" >
-                    <li>
-                        <a href="" class="me-4">Spesa online</a>
-                    </li>
-                      <li>
-                        <a href="" class="me-4">Elettronica e giocattoli</a>
-                    </li>
-                      <li>
-                        <a href="" class="me-4">Promozioni<i class="fa-solid fa-caret-down ms-2 me-2"></i></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="nav">
-                <ul>
-                    <li>
-                        <a href="" class="me-4 text-secondary">Vivi di gusto |</a>
-                    </li>
-                    <li>
-                        <a href="" class="me-4 text-secondary">Idee regalo <i class="fa-solid fa-caret-down ms-2 me-2"></i>|</a>
-                    </li>
-                    <li>
-                        <a href="" class="me-4">Spesa Smart <i class="fa-solid fa-caret-down ms-2 me-2"></i>|</a>
-                    </li>
-                    <li>
-                        <a href=""><i class="fa-solid fa-user me-1"></i><strong>Accedi</strong><i class="fa-solid fa-caret-down ms-2"></i></a>
-                    </li>
-                </ul>
-            </div> -->
-        </div>
-    </div>
+									<div>
+											<a href="">
+													<i class="fa-solid fa-cart-shopping cart"></i>
+											</a>
+									</div>
+							</div>
+					</div>
+
+			<!--UNDER-->
+
+					<div class="down">
+							<ul class="left">
+									<li>
+											<a href="">Spesa Online</a>
+									</li>
+									<li>
+											<a href="">Elettronica e Giocattoli</a>
+									</li>
+									<li>
+											<a href="">Promozioni
+													<i class="fa-solid fa-caret-down "></i>
+											</a>
+
+									</li>
+							</ul>
+							<ul class="right">
+									<li>
+											<a class="grey" href="">Spesa online</a>
+									</li>
+									<li>
+											<a class="grey" href="">Elettronica e giocattoli</a>
+									</li>
+									<li>
+											<a href="">Spesa Smart
+													<i class="fa-solid fa-caret-down"></i>
+											</a>
+									</li>
+									<li>
+											<a href="">
+													<i class="fa-solid fa-user me-1"></i>
+													<strong>Accedi</strong>
+													<i class="fa-solid fa-caret-down ms-2"></i>
+											</a>
+									</li>
+							</ul>
+					</div>
+			</div>
     </div>
 </template>
 
 <script>
 export default {
     name: 'Navbar',
-
+    data() {
+        return {
+        }
+    },
+    methods: {
+        DropDownUser(){
+            this.$refs.UserMenu.classList.toggle('onUserMenu');
+            this.$refs.UserArrow.classList.toggle('rotate');
+        },
+    },
 }
 </script>
 
@@ -128,7 +106,7 @@ export default {
     flex-wrap: wrap;
 }
 
-.up{
+.up {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -136,7 +114,7 @@ export default {
     background-color: $clear-100;
     padding: .5rem 0;
     margin-bottom: 1rem;
-    .form{
+    .form {
         width: 50%;
         display: flex;
         align-items: center;
@@ -188,7 +166,7 @@ export default {
     }
 }
 
-.down{
+.down {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -245,24 +223,6 @@ export default {
             }
         }
     }
-    // width: 100%;
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
-    // background-color: $clear-100;
-    // ul{
-    //     display: flex;
-    //     list-style: none;
-             
-    //     a{
-    //         text-decoration: none;
-    //         color: #14386b;
-    //         &:hover { 
-    //             color: #3388ea;
-    //             }
-    //     }
-    // } 
-
 }
 
 .payback{
@@ -302,4 +262,45 @@ export default {
     }
 }
 
+
+.UserSection{
+    position: relative;
+
+    .userText{
+        cursor: pointer;
+
+
+    }
+
+
+    .dropDown-User{
+        position: absolute;
+        top: 100%;
+        right: 100%;
+        background-color: white;
+        box-shadow: 1px 0px 22px 6px rgba(0,0,0,0.10);
+        z-index: 1;
+        display: none;
+        padding: 10px;
+        border-radius: 10px;
+
+        &.onUserMenu{
+            display: block;
+
+        }
+        
+        a{
+            color: black;
+        }
+
+
+    }
+}
+
+.arrow_user{
+    transition: all 0.15s;
+}
+.arrow_user.rotate{
+    transform: rotate(-180deg)
+}
 </style>

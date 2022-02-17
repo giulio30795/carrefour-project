@@ -25,6 +25,6 @@ class Food extends Model
     ];
     public function allergens()
     {
-        return $this->belongsToMany("App\Allergen");
+        return $this->belongsToMany("App\Allergen", "food_allergen");
     }
 }

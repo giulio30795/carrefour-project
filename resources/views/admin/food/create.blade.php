@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('content')
-    <div class="w-50 mx-auto create_crud">
+    <div class="w-50 mx-auto create_crud mb-5">
+        <h1 class="mb-2">Add Product</h1>
         <form action="{{ route('admin.food.store') }}" method="POST">
             @csrf
 
@@ -68,14 +69,40 @@
             {{-- description --}}
             <label for="description" class="form-label mt-4">Product Description</label>
             <textarea rows="6" class="form-control" name="description" id="description">{{ old('description') }}
-                            </textarea>
+                                                                    </textarea>
             @error('description')
                 <div class="text-danger">{{ $message }}</div>
             @enderror
 
+            {{-- allergens --}}
+            <div class="form-label mt-4">Allergens</div>
+            @foreach ($allergens as $allergen)
+                <span class="form-label mr-3">
+                    <input type="checkbox" name="allergens[]" id="allergen{{ $loop->iteration }}"
+                        value="{{ $allergen->id }}" @if (in_array($allergen->id, old('allergens', []))) checked @endif>
+                    <label for="allergen{{ $loop->iteration }}">{{ $allergen->name }}</label>
+                </span>
+            @endforeach
+            @error('allergens')
+                <div class="text-danger">{{ $message }}</div>
+            @enderror
+
+            {{-- categories --}}
+            <div class="form-label mt-4">Categories</div>
+            @foreach ($categories as $category)
+                <span class="form-label mr-3">
+                    <input type="checkbox" name="categories[]" id="category{{ $loop->iteration }}"
+                        value="{{ $category->id }}" @if (in_array($category->id, old('categories', []))) checked @endif>
+                    <label for="category{{ $loop->iteration }}">{{ $category->name }}</label>
+                </span>
+            @endforeach
+            @error('categories')
+                <div class="text-danger">{{ $message }}</div>
+            @enderror
+
             {{-- send --}}
-            <button class="mt-4 btn btn-primary" type="submit">
-                Crea nuovo Food
+            <button class="mt-4 btn btn-primary d-block" type="submit">
+                Create new Food
             </button>
         </form>
     </div>

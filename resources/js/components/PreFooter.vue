@@ -23,6 +23,7 @@
                                     <span>App Store</span>
                                 </div>
                                 
+
                             </div>
                         </div>
                     </div>
@@ -82,7 +83,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
         <div class="row py-3 content-asset">
             <div class="wrapper d-flex p-0">
@@ -102,9 +102,7 @@
                     <img class="me-3" alt="" src="https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dw77b055e6/distributore.svg">
                     <div class="prefooter-content">CARREFOUR CARBURANTI</div>
                 </div>
-                
             </div>
-            
         </div>
     </div>
 </template>
@@ -154,10 +152,6 @@ export default {
                 }
             }
         }
-    
-        
-
-        
     }
 
     .carrefour_now {
@@ -207,4 +201,15 @@ export default {
         }
     }
 
+    .cursor-pointer {
+        cursor: pointer;
+    }
+
+    .prefooter-content {
+        transition: all .2s ease-in;
+
+        &:hover {
+            transform: translateY(-2px);
+        }
+    }
 </style>

@@ -38,14 +38,12 @@ export default {
 	props: {
 		categories: Array,
 	},
+
 	data() {
 		return {
 			carouselScroll: 0,
 			carousel: document.querySelector('.ContainerForCategory'),
 		}
-	},
-	created() {
-
 	},
 	methods: {
 
@@ -71,14 +69,12 @@ export default {
 				});
 			}
 		},
-		
 	}
-
 }
 </script>
 
 <style lang="scss" scoped>
-@import '../../sass/_variables.scss';
+@import '../../sass/app.scss';
 
 .scroll_container{
 	position: relative;
