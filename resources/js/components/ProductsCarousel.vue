@@ -70,21 +70,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../sass/app.scss';
 
 .product_carousel {
 	width: 80%;
 	padding-bottom: 2.5rem;
-	border-bottom: 1px solid lightgray;
+	border-bottom: 1px solid $disabled-bg;
 	margin: 2rem auto;
 	.heading {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	margin-bottom: 2rem;
 		.section_title {
-			width: 92%;
+			color: $primary-400;
 		}
 		.nav_btns {
-			width: 8%;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
@@ -96,10 +97,12 @@ export default {
 				border-radius: 50%;
 				display: grid;
 				place-content: center;
-				background-color: red;
-				box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+				background-color: $enabled;
+				box-shadow: 0 0 8px rgba($dark-900, .3);
+				color: $clear-100;
+				margin-left: 2.5rem;
 				&.disabled {
-					background-color: lightgray;
+					background-color: $disabled-bg;
 					pointer-events: none;
 				}
 			}
@@ -110,6 +113,7 @@ export default {
 		flex-wrap: nowrap;
 		align-items: stretch;
 		overflow-x: auto;
+		padding-inline: 0;
 		// hiding scrollbars
 		-ms-overflow-style: none;
 		scrollbar-width: none;

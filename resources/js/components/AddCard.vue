@@ -14,13 +14,17 @@
 </script>
 
 <style lang="scss" scoped>
+
 	.add_card {
-		width: calc((100% - 60px) / 4);
-		height:100px;
-		margin-inline: 5px;
-		margin-bottom: 10px;
-		padding: 10px;
-		list-style-type: none;
-		border-radius: 5px;
+		max-width: 100%;
+		height: 100%;
+		display: inline-block;
+		flex-shrink: 0;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
 	}
 </style>

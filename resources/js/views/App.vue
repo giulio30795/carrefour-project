@@ -5,9 +5,10 @@
 
 	<!-- <Main /> -->
 	<main>
-    
 		<Categories :categories="categories"/>
-    	<CarouselPubblicita />
+		<CarouselPubblicita />
+		<ProductsCarousel :products="products"/>
+		<ProductsCarousel :products="products"/>
 		<ProductsCarousel :products="products"/>
 		<AddsCarousel :adds="adds"/>
 	</main>
@@ -48,7 +49,7 @@ export default {
 	created() {
 		this.getCategories();
 		this.fetchProducts();
-    	this.fetchBanners();
+		this.fetchBanners();
 	},
 	methods: {
 		fetchProducts() {
@@ -71,7 +72,7 @@ export default {
 			.catch(err => {
 				console.log(err);
 			});
-		},	
+		},
 		getCategories() {
 
 			axios.get('http://127.0.0.1:8000/api/category')
@@ -88,14 +89,17 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import '../../sass/_variables.scss';
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 body {
-background-color: #fff;
-font-family: sans-serif;
+	background-color: $clear-300;
+	font-family: sans-serif;
+	overflow-x: hidden;
 }
+
 </style>
