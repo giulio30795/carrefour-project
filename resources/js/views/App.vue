@@ -14,6 +14,8 @@
 		<Categories :categories="categories"/>
 		<CarouselPubblicita />
 		<ProductsCarousel :products="products"/>
+		<ProductsCarousel :products="products"/>
+		<ProductsCarousel :products="products"/>
 		<AddsCarousel :adds="adds"/>
 	</main>
 	<Footer />
