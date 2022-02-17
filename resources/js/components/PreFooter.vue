@@ -1,9 +1,9 @@
 <template>
     <div class="pre-footer">
-        <div class="container-lg pb-5">
+        <div class="pb-5">
             <h2 class="section-title pb-3">Carrefour per te - I nostri servizi</h2>
             <div class="row">
-                <div class="col-12 col-lg-6 footer-app-wrapper px-3 py-5 mb-3">
+                <div class="col-12 col-lg-6 footer-app-wrapper">
                     <div class="row">
                         <div class="col-4 col-lg-5">
                             <img class="w-100" src="https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dwf2f68bf3/app.png" alt="">
@@ -12,49 +12,71 @@
                             <div class="footer-app-text">
                                 Dal 4 al 18 febbraio scarica la app Carrefour e prova a vincere la tua spesa!
                             </div>
-                            <div class="footer-app-buttons d-flex flex-column flex-lg-row">
-                                <i class="fab fa-google-pay pe-3"></i>
-                                <i class="fab fa-app-store-ios"></i>
+                            <div class="footer-app-buttons d-flex flex-lg-row w-100
+                            mt-2">
+                                <div class="btn btn-dark me-2 d-flex">
+                                    <i class="fab fa-google-pay me-2"></i>
+                                    <span>Google Play</span>
+                                </div>
+                                <div class="btn btn-dark me-2 d-flex">
+                                    <i class="fab fa-app-store-ios me-2"></i>
+                                    <span>App Store</span>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6">
-                    <div class="row g-3">
-                        <div class="col-12 col-lg-6">
-                            <div class="d-flex align-items-center footer-service-item p-3">
-                                <img class="me-3 d-none d-lg-inline-block" alt="Carrefour NOW" src="https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dw48cbac27/carrefour_now.svg" title="Carrefour NOW" width="45" height="42" style="width: 45px; height:42px;">
-                                <div class="footer-service-item-content">
-                                    <div class="footer-service-item-title">Carrefour NOW</div>
-                                    <div class="footer-service-item-subtitle">Il nuovo servizio di consegna veloce</div>
-                                </div>
+                <div class="carrefour_now">
+                    <div class="footer-service-item d-flex align-items-center p-3">
+                        <img src="https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dw48cbac27/carrefour_now.svg"
+                        alt=""
+                        class="me-3 d-none d-lg-inline-block footer-service-item__icon">
+                        <div class="footer-service-item-content">
+                            <div class="footer-service-item__title">
+                                Carrefour NOW
+                            </div>
+                            <div class="footer-service-item-subtitle">
+                                Il nuovo servizio di consegna veloce
                             </div>
                         </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="d-flex align-items-center footer-service-item p-3">
-                                <img class="me-3 d-none d-lg-inline-block" alt="Franchising Carrefour" src="https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dw9a8aa761/franchising.svg" title="Franchising Carrefour" width="45" height="42">
-                                <div class="footer-service-item-content">
-                                    <div class="footer-service-item-title">Franchising Carrefour</div>
-                                    <div class="footer-service-item-subtitle">Apri un negozio insieme a noi</div>
-                                </div>
+                    </div>
+                    <div class="footer-service-item d-flex align-items-center p-3">
+                        <img src="https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dw9a8aa761/franchising.svg"
+                        alt=""
+                        class="me-3 d-none d-lg-inline-block footer-service-item__icon">
+                        <div class="footer-service-item-content">
+                            <div class="footer-service-item__title">
+                                Franchising Carrefour
+                            </div>
+                            <div class="footer-service-item-subtitle">
+                                Apri un negozio insieme a noi
                             </div>
                         </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="d-flex align-items-center footer-service-item px-3">
-                                <img class="me-3 d-none d-lg-inline-block" alt="Donne in gravidanza e neogenitori" src="https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dw27e3d668/donne_in_gravidanza.svg" title="Donne in gravidanza e neogenitori" width="45" height="42" style="width: 45px; height:42px;">
-                                <div class="footer-service-item-content">
-                                    <div class="footer-service-item-title">Donne in gravidanza e neogenitori</div>
-                                    <div class="footer-service-item-subtitle">Consegna gratuita per spesa online di almeno 15€</div>
-                                </div>
+                    </div>
+                    <div class="footer-service-item d-flex align-items-center p-3">
+                        <img src="https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dw27e3d668/donne_in_gravidanza.svg"
+                        alt=""
+                        class="me-3 d-none d-lg-inline-block footer-service-item__icon">
+                        <div class="footer-service-item-content">
+                            <div class="footer-service-item__title">
+                                Donne in gravidanza e neogenitori
+                            </div>
+                            <div class="footer-service-item-subtitle">
+                                Consegna gratuita per spesa online di almeno 15€
                             </div>
                         </div>
-                        <div class="col-12 col-lg-6 h-100">
-                            <div class="d-flex align-items-center footer-service-item p-3">
-                                <img class="me-3 d-none d-lg-inline-block" alt="Over 60" src="https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dw22720637/over_60.svg" title="Over 60" width="45" height="42" style="width: 45px; height:42px;">
-                                <div class="footer-service-item-content">
-                                    <div class="footer-service-item-title">Over 60</div>
-                                    <div class="footer-service-item-subtitle">Consegna gratuita per spesa online di almeno 15€</div>
-                                </div>
+                    </div>
+                    <div class="footer-service-item d-flex align-items-center p-3">
+                        <img src="https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dw22720637/over_60.svg"
+                        alt=""
+                        class="me-3 d-none d-lg-inline-block footer-service-item__icon">
+                        <div class="footer-service-item-content">
+                            <div class="footer-service-item__title">
+                                Over 60
+                            </div>
+                            <div class="footer-service-item-subtitle">
+                                Consegna gratuita per spesa online di almeno 15€
                             </div>
                         </div>
                     </div>
@@ -90,35 +112,64 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+@import '../../sass/app.scss';
 
+.pre-footer {
+    width: 80%;
+    margin: 2rem auto;
+}
 
     .section-title {
-        color: #0e3368;
+        color: $primary-400;
     }
 
     .footer-app-wrapper {
-        background: linear-gradient(1turn,rgba(9,112,230,.2),rgba(211,227,245,0) 182.95%);
-        border-radius: 15px;
-    
-        .footer-app-text {
-            color: #1b3d79;
+        background: linear-gradient(1turn,rgba(9,112,230,.2),
+        rgba(211,227,245,0) 182.95%);
+        border-radius: 1rem;
+        .row {
+            align-items: center;
+            .footer-app-text {
+            color: $primary-400;
             font-size: 1.4rem;
             line-height: 1.25;
-        }
-
-        .footer-app-buttons {
-            i {
-                font-size: 2rem;
+            font-weight: bold;
+            }
+            .footer-app-buttons {
+                .btn {
+                    padding: .5rem .8rem;
+                    align-items: center;
+                    text-align: left;
+                    i {
+                        font-size: 2rem;
+                    }
+                }
             }
         }
+    
+        
+
+        
     }
 
-    .footer-service-item {
-        border: 2px solid #d3e3f5;
-        border-radius: 8px;
-
-        .footer-service-item-title {
-            color: #1b3d79;
+    .carrefour_now {
+        width: 50%;
+        display: grid;
+        gap: 5% 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        .footer-service-item {
+            border-radius: .5rem;
+            border: 2px solid rgba($primary-100, .3);
+            background-color: $clear-100;
+            &__icon {
+                width: 60px;
+            }
+            &__title {
+                color: $primary-400;
+                font-size: 1rem;
+                font-weight: bold;
+            }
         }
     }
 
