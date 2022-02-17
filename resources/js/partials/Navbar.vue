@@ -1,5 +1,5 @@
 <template>
-    <div class="navigation">
+	<div class="navigation">
 
 			<div class="wrapper">
 					<!--OVER IT-->
@@ -63,32 +63,52 @@
 													<i class="fa-solid fa-caret-down"></i>
 											</a>
 									</li>
-									<li>
+									<li class="UserSection">
+
+										<span class="userText" @click="DropDownUser">
+
+											<i class="fa-solid fa-user me-1"></i>
+
+											<strong>Utente</strong>
+
+											<i class="fa-solid fa-caret-down ms-2 arrow_user" ref="UserArrow"></i>
+										</span>
+
+										<div class="dropDown-User"
+											ref="UserMenu">
+											
+											<a href="#">Accedi</a>
+
+											<a href="#">Registrati</a>
+
+										</div>
+									</li>
+									<!-- <li>
 											<a href="">
 													<i class="fa-solid fa-user me-1"></i>
 													<strong>Accedi</strong>
 													<i class="fa-solid fa-caret-down ms-2"></i>
 											</a>
-									</li>
+									</li> -->
 							</ul>
 					</div>
 			</div>
-    </div>
+	</div>
 </template>
 
 <script>
 export default {
-    name: 'Navbar',
-    data() {
-        return {
-        }
-    },
-    methods: {
-        DropDownUser(){
-            this.$refs.UserMenu.classList.toggle('onUserMenu');
-            this.$refs.UserArrow.classList.toggle('rotate');
-        },
-    },
+	name: 'Navbar',
+	data() {
+		return {
+		}
+	},
+	methods: {
+		DropDownUser(){
+			this.$refs.UserMenu.classList.toggle('onUserMenu');
+			this.$refs.UserArrow.classList.toggle('rotate');
+		},
+	},
 }
 </script>
 
@@ -96,211 +116,211 @@ export default {
 @import '../../sass/_variables.scss';
 
 .navigation {
-    background-color: $clear-100;
+	background-color: $clear-100;
 }
 
 .wrapper {
-    padding: 1rem 2.5rem;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
+	padding: 1rem 2.5rem;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .up {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $clear-100;
-    padding: .5rem 0;
-    margin-bottom: 1rem;
-    .form {
-        width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        .icon {
-            display: grid;
-            place-content: center;
-            position: absolute;
-            top: 50%;
-            right: .5rem;
-            color: $clear-100;
-            font-size: .8rem;
-            transform: translateY(-50%);
-            background-color: $primary-100;
-            padding: .4rem;
-            aspect-ratio: 1.0;
-            border-radius: 50%;
-            cursor: pointer;
-            transition: filter .15s ease;
-            &:hover {
-                filter: brightness(80%);
-            }
-        }
-        input {
-            width: 100%;
-            padding: .5rem .7rem;
-            background-color: $clear-300;
-            border: none;
-            border-radius: 100px;
-            &:focus {
-                outline: none;
-            }
-            &::placeholder {
-                color: rgba($dark-900, .3);
-                font-size: .9rem;
-            }
-        }
-    }
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $clear-100;
+	padding: .5rem 0;
+	margin-bottom: 1rem;
+	.form {
+		width: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		.icon {
+			display: grid;
+			place-content: center;
+			position: absolute;
+			top: 50%;
+			right: .5rem;
+			color: $clear-100;
+			font-size: .8rem;
+			transform: translateY(-50%);
+			background-color: $primary-100;
+			padding: .4rem;
+			aspect-ratio: 1.0;
+			border-radius: 50%;
+			cursor: pointer;
+			transition: filter .15s ease;
+			&:hover {
+				filter: brightness(80%);
+			}
+		}
+		input {
+			width: 100%;
+			padding: .5rem .7rem;
+			background-color: $clear-300;
+			border: none;
+			border-radius: 100px;
+			&:focus {
+				outline: none;
+			}
+			&::placeholder {
+				color: rgba($dark-900, .3);
+				font-size: .9rem;
+			}
+		}
+	}
 
-    .right {
-        justify-content: flex-end;
-        display: flex;
-        align-items: center;
-        .cart {
-        margin: 0 2rem;
-        font-size: 1.5rem;
-        }
-    }
+	.right {
+		justify-content: flex-end;
+		display: flex;
+		align-items: center;
+		.cart {
+		margin: 0 2rem;
+		font-size: 1.5rem;
+		}
+	}
 }
 
 .down {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $clear-100;
-    .left,
-    .right {
-        width: 50%;
-        display: flex;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        li {
-            display: block;
-            a {
-                color: $primary-400;
-                text-decoration: none;
-                &:hover {
-                    color: $enabled;
-                }
-                &.active {
-                    color: $enabled;
-                }
-                i {
-                    margin-left: .4rem;
-                }
-            }
-        }
-    }
-    .left {
-        li {
-            margin-right: 2.2rem;
-        }
-    }
-    .right {
-        justify-content: flex-end;
-        font-size: .75rem;
-        li {
-            margin-left: 1rem;
-            &::after {
-                content: "|";
-                margin-left: 1rem;
-                color: rgba($disabled-text, .2);
-            }
-            &:nth-child(3),
-            &:nth-child(4) {
-                font-size: 1rem;
-            }
-            a.grey {
-                color: $disabled-text;
-                &:hover {
-                    color: $enabled;
-                }
-            }
-        }
-    }
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $clear-100;
+	.left,
+	.right {
+		width: 50%;
+		display: flex;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+		li {
+			display: block;
+			a {
+				color: $primary-400;
+				text-decoration: none;
+				&:hover {
+					color: $enabled;
+				}
+				&.active {
+					color: $enabled;
+				}
+				i {
+					margin-left: .4rem;
+				}
+			}
+		}
+	}
+	.left {
+		li {
+			margin-right: 2.2rem;
+		}
+	}
+	.right {
+		justify-content: flex-end;
+		font-size: .75rem;
+		li {
+			margin-left: 1rem;
+			&::after {
+				content: "|";
+				margin-left: 1rem;
+				color: rgba($disabled-text, .2);
+			}
+			&:nth-child(3),
+			&:nth-child(4) {
+				font-size: 1rem;
+			}
+			a.grey {
+				color: $disabled-text;
+				&:hover {
+					color: $enabled;
+				}
+			}
+		}
+	}
 }
 
 .payback{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    border-radius: .5rem;
-    border: 2px solid rgba($primary-100, .15);
-    cursor: pointer;
-    padding-inline: 1.5rem 1rem;
-    &:hover {
-        background-color: rgba($primary-100, .15);
-        border: 2px solid transparent;
-    }
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	border-radius: .5rem;
+	border: 2px solid rgba($primary-100, .15);
+	cursor: pointer;
+	padding-inline: 1.5rem 1rem;
+	&:hover {
+		background-color: rgba($primary-100, .15);
+		border: 2px solid transparent;
+	}
 
-    img {
-        position: absolute;
-        left: -20px;
-        width: 2rem;
-    }
+	img {
+		position: absolute;
+		left: -20px;
+		width: 2rem;
+	}
 
-    .pay {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-decoration: none;
-        .top {
-            font-size: .57rem;
-            color: $primary-400;
-        }
-        .bot {
-            font-size: 1rem;
-            strong {
-                text-decoration: none;
-            }
-        }
-    }
+	.pay {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-decoration: none;
+		.top {
+			font-size: .57rem;
+			color: $primary-400;
+		}
+		.bot {
+			font-size: 1rem;
+			strong {
+				text-decoration: none;
+			}
+		}
+	}
 }
 
 
 .UserSection{
-    position: relative;
+	position: relative;
 
-    .userText{
-        cursor: pointer;
-
-
-    }
+	.userText{
+		cursor: pointer;
 
 
-    .dropDown-User{
-        position: absolute;
-        top: 100%;
-        right: 100%;
-        background-color: white;
-        box-shadow: 1px 0px 22px 6px rgba(0,0,0,0.10);
-        z-index: 1;
-        display: none;
-        padding: 10px;
-        border-radius: 10px;
-
-        &.onUserMenu{
-            display: block;
-
-        }
-        
-        a{
-            color: black;
-        }
+	}
 
 
-    }
+	.dropDown-User{
+		position: absolute;
+		top: 100%;
+		right: 100%;
+		background-color: $clear-100;
+		box-shadow: 1px 0px 22px 6px rgba($dark-900, .1);
+		z-index: 1;
+		display: none;
+		padding: 10px;
+		border-radius: 10px;
+
+		&.onUserMenu{
+			display: block;
+
+		}
+		
+		a{
+			color: $dark-900;
+		}
+
+
+	}
 }
 
 .arrow_user{
-    transition: all 0.15s;
+	transition: all 0.15s;
 }
 .arrow_user.rotate{
-    transform: rotate(-180deg)
+	transform: rotate(-180deg)
 }
 </style>
