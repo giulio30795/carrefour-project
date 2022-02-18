@@ -253,6 +253,7 @@ export default {
 	border: 2px solid rgba($primary-100, .15);
 	cursor: pointer;
 	padding-inline: 1.5rem 1rem;
+	text-decoration: none;
 	&:hover {
 		background-color: rgba($primary-100, .15);
 		border: 2px solid transparent;
@@ -262,23 +263,6 @@ export default {
 		position: absolute;
 		left: -20px;
 		width: 2rem;
-	}
-
-	.pay {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		text-decoration: none;
-		.top {
-			font-size: .57rem;
-			color: $primary-400;
-		}
-		.bot {
-			font-size: 1rem;
-			strong {
-				text-decoration: none;
-			}
-		}
 	}
 }
 

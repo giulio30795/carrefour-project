@@ -35,38 +35,26 @@
                     </div>
                 </div>
             </nav>
-            <div class="footer-customer col-12 col-lg-5 p-4">
-                <div class="row">
-                    <div class="col-12 border-customer mx-3 mb-2">
-                        <div class="row call-us">
-                            <div class="col-6 d-flex justify-content-center align-items-center call-us-image cursor-pointer">
-                                <img alt="call us" src="https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dwd3d279b3/call-us.png">
-                            </div>
-                            <div class="col-6 d-flex flex-column justify-content-center align-items-center cursor-pointer">
-                                <div class="text-uppercase">Chiamaci</div>
-                                <div class="call-us-number-text">al numero verde</div>
-                                <div class="call-us-number">800 650 650</div>
-                            </div>
-                        </div>
+            <div class="footer-customer">
+                <div class="customer_primary_item col-12 d-flex">
+                    <div class="customer_primary_item__image col-6 d-flex justify-content-center">
+                        <img alt="call us" src="https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dwd3d279b3/call-us.png">
                     </div>
-                    <div class="col-12 pe-0">
-                        <div class="row justify-content-between cursor-pointer">
-                            <div class="col-6 pe-0">
-                                <div class="border-customer d-flex flex-column justify-content-center align-items-center text-uppercase py-3">
-                                    <img alt="punti vendita" src="https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dw680dbb0b/point-of-service.png">
-                                    Trova un 
-                                    <strong>Punto vendita</strong>
-                                </div>
-                            </div>
-                            <div class="col-6 pe-0">
-                                <div class="border-customer d-flex flex-column justify-content-center align-items-center text-uppercase pb-4 cursor-pointer">
-                                    <img alt="servizio clienti" src="https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dw73041029/contact-service.png">
-                                    Contatta il 
-                                    <strong>servizio clienti</strong>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="customer_primary_item__text col-6 d-flex justify-content-center text-center flex-column">
+                        <div class="text-uppercase">Chiamaci</div>
+                        <div class="number">al numero verde</div>
+                        <div class="disabled">800 650 650</div>
                     </div>
+                </div>
+                <div class="customer_secondary_item text-center py-4">
+                    <img src="https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dw680dbb0b/point-of-service.png" alt="">
+                    <div class="">trova un</div>
+                    <div class="main_text">punto vendita</div>
+                </div>
+                <div class="customer_secondary_item text-center py-4">
+                    <img src="https://www.carrefour.it/on/demandware.static/-/Library-Sites-carrefour-library-IT/default/dw73041029/contact-service.png" alt="">
+                    <div class="">contatta il</div>
+                    <div class="main_text">servizio clienti</div>
                 </div>
             </div>
           </div>
@@ -376,12 +364,14 @@ export default {
 }
 </script>
 
-<style style="scoped" lang="scss">  
+<style style="scoped" lang="scss">
+@import '../../sass/app.scss';
+
 
     .footer-social {
         display: flex;
-        background: #1b3d79;
-        color: #fff;
+        background: $primary-400;
+        color: $clear-100;
 
         .social-images{
             font-size: 2rem;
@@ -389,19 +379,21 @@ export default {
     }
 
     .footer-infos {
-
+        .row {
+            align-items: flex-start;
+        }
         ul {
             list-style: none;
 
             li {
 
                 h4 {
-                    color: #2b4b83
+                    color: $primary-400;
                 }
 
                 a {
                     text-decoration: none;
-                    color: black;
+                    color: $dark-900;
                     font-size: 0.80rem;
                 }
             }
@@ -412,19 +404,45 @@ export default {
         }
 
         .footer-customer {
-            .border-customer {
-                border: 2px solid #d3e3f5;
-                border-radius: 8px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: .5rem;
+            margin-left: auto;
+            width: 20%;
+            .customer_primary_item {
+                @include blueBorder;
+                &__image {
+                    background: $clear-700;
+                    align-items: center;
+                    img {
+                        height: 80%;
+                    }
+                }
+                &__text {
+                    .text-uppercase {
+                        color: $primary-400;
+                        font-weight: bold;
+                        font-size: 1.2rem;
+                    }
+                    .number {
+                        color: $disabled-text;
+                        font-size: .9rem;
+                    }
+                    .disabled {
+                        font-weight: bold;
+                        color: $enabled;
+                        font-size: 1.1rem;
+                    }
+                }
             }
-            .call-us {
-                .call-us-image {
-                    background: #d3e3f5;
-                }
-                .call-us-number-text {
-                    color: #979797;
-                }
-                .call-us-number {
-                    color: #0970e6;
+            .customer_secondary_item {
+                @include blueBorder;
+                width: calc((100% / 2) - .25rem);
+                color: $primary-400;
+                text-transform: uppercase;
+                font-size: .9rem;
+                .main_text {
+                    font-weight: bold;
                 }
             }
         }
@@ -432,28 +450,25 @@ export default {
     
 
     .payments {
-        
         .payments-text {
-            color: #0970e6;
+            color: $enabled;
         }
         .payments-image {
             i {
                 font-size: 2rem;
                 padding: .5rem;
-                background: #fff;
+                background: $clear-100;
             }
         }
     }
 
     .sub-footer {
-        color: #979797;
-        background: #f7f7f7;
+        color: $disabled-text;
+        background: $clear-300;
         padding: 1rem;
     }
 
     .cursor-pointer {
         cursor: pointer;
     }
-
-    
 </style>

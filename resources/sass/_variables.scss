@@ -16,6 +16,13 @@ $enabled: #096cd9;
 
 $dark-900: #000;
 
+$clear-700: #d3e3f5;
 $clear-500: #e6f1fc;
 $clear-300: #f7f7f7;
 $clear-100: #fff;
+
+
+@mixin blueBorder {
+	border-radius: .8rem;
+	border: 2px solid $clear-700;
+}
